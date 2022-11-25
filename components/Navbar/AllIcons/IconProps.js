@@ -1,13 +1,13 @@
 
 
 
-const IconProps = ({icon, title, text}) => {
+const IconProps = ({icon, title, text, horiz, iconStyle, textStyle}) => {
    
     return (  
       <div className={text}>
-      <svgIcon>
-          {icon}
-          <h4>{title}</h4>
+      <svgIcon className={horiz}>
+          <span className={iconStyle}>{icon}</span>
+          <h4 className={textStyle}>{title}</h4>
       </svgIcon>  
       </div>
     

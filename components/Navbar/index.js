@@ -60,7 +60,11 @@ const NavbarIcons = [
         icon:[<HomeIcon/>],
         iconHref:"/",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:""
+
      
  
     },
@@ -70,7 +74,10 @@ const NavbarIcons = [
         icon:[<PeopleIcon/>],
         iconHref:"/mynetwork",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:""
 
     },
     {
@@ -79,7 +86,10 @@ const NavbarIcons = [
         icon:[<WorkIcon/>],
         iconHref:"/jobs",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:"",
 
     },
     {
@@ -88,7 +98,10 @@ const NavbarIcons = [
         icon:[<MessageIcon/>],
         iconHref:"/messaging",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:"",
     },
     {
         id:5,
@@ -96,7 +109,10 @@ const NavbarIcons = [
         icon:<CircleNotificationsIcon/>,
         iconHref:"/notifications",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:"",
 
     },
  
@@ -107,6 +123,9 @@ const NavbarIcons = [
         iconHref:"/Work",
         classN:"",
         text:"text-center font-light text-xs pl-[6rem]",
+        horiz:"",
+        iconStyle:"",
+        textStyle:"",
 
     },
     {
@@ -115,7 +134,10 @@ const NavbarIcons = [
         icon:<NextWeekIcon/>,
         iconHref:"/postajob",
         classN:"",
-        text:"text-center font-light text-xs"
+        text:"text-center font-light text-xs",
+        horiz:"",
+        iconStyle:"",
+        textStyle:"",
     }
 ]
 
@@ -145,7 +167,8 @@ const Navbar = () => {
                icon={img.icon}
                text={img.text}
                title={img.title}
-               src={img.imgSrc}            
+               src={img.imgSrc}  
+          
             />     
           </div>
         ))}
@@ -161,6 +184,7 @@ const Navbar = () => {
                icon={(item.id===6) ? (item.icon[0]) : (item.icon)}
                href={item.iconHref}
                text={item.text}
+               horiz={item.horiz}
                classN={item.id===6 ? item.classN : ""}
             />        
           </div>  
