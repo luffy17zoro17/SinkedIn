@@ -4,10 +4,12 @@ import Image from 'next/image';
 
 
 
-const ImageProps = ({src,className,ht,wd,text,title,icon}) => {
+const ImageProps = ({src,className,ht,wd,text,title,icon,msg, msgClassN,titleClassN, date, dateClassN, msgleft}) => {
 
     return (  
        <div className={text}>
+       <div className={msgleft}>
+       <div> 
         <Image
           src={src}
           className={className}
@@ -15,7 +17,14 @@ const ImageProps = ({src,className,ht,wd,text,title,icon}) => {
           width={wd}
           alt=""
         /> 
-        <h4>{title}{icon}</h4>
+       </div> 
+       <div> 
+        <h4 className={titleClassN}>{title}{icon}</h4>
+        <h5 className={msgClassN}>{msg}</h5>
+       </div>
+       </div>
+       
+        <h4 className={dateClassN}>{date}</h4>
        </div>
     );
 }

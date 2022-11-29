@@ -19,6 +19,17 @@ import IconProps from "./AllIcons/IconProps";
 
 
 
+
+const SearchBarItem = [
+    {
+        placeholder:"Search",
+        icons:[""],
+        inputClass:`bg-gray-200 pl-10 outline-none
+             py-2 placeholder-gray-600 rounded-md text-sm`
+    }
+]
+
+
 const NavbarImages= [
     {
         id:1,
@@ -152,9 +163,10 @@ const Navbar = () => {
 
     
     return (
-
-        <div className="flex items-center w-[100%] border flex 
-        justify-center space-x-[2rem] relative">
+        
+        <div className="flex items-center w-[100%] border z-30 shadow shadow-black 
+         flex 
+        justify-center space-x-[2rem] fixed top-0 bg-white">
 
          
         {NavbarImages.map((img)=>(          
@@ -173,8 +185,15 @@ const Navbar = () => {
           </div>
         ))}
     
+        {SearchBarItem.map((item) => (
+           <SearchBar
+             placeholder={item.placeholder}
+             icon={item.icons}
+             inputClass={item.inputClass}
+           /> 
 
-        <SearchBar/>
+        ))}
+        
           
         {NavbarIcons.map((item)=>(
           <div key={item.id}>          

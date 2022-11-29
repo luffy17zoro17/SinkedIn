@@ -50,9 +50,10 @@ const RecentContent = [
 const LeftBottomRecent = () => {
 
     return (
-      <div className="flex flex-col items-start px-4 text-xs
-       justify-center relative w-[15rem] rounded-tl-xl 
-       rounded-br-xl border">  
+     
+      <div className="flex flex-col px-4 text-xs
+       justify-center w-[15rem] rounded-tl-xl
+       bg-white rounded-br-xl border">  
         <h1 className="py-2 pt-4">Recent</h1>
         
         {RecentContent.map((item)=> (
@@ -82,6 +83,8 @@ const LeftBottomRecent = () => {
             Discover more
         </h3>
       </div>  
+    
+     
     );
 }
 

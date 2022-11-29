@@ -32,8 +32,8 @@ const PostHeaderIcons = [
       icon:[<InsertPhotoIcon/>],
       iconHref:"/",
       classN:"",
-      text:"text-center font-light text-xs",
-      horiz:"flex",
+      text:"",
+      horiz:"flex items-center gap-2",
       iconStyle:"text-blue-400",
       textStyle:"",
    
@@ -45,8 +45,8 @@ const PostHeaderIcons = [
       icon:[<SmartDisplayIcon/>],
       iconHref:"/mynetwork",
       classN:"",
-      text:"text-center font-light text-xs",
-      horiz:"flex",
+      text:"",
+      horiz:"flex items-center gap-2",
       iconStyle:"text-green-500",
       textStyle:"",
 
@@ -57,8 +57,8 @@ const PostHeaderIcons = [
       icon:[<BusinessCenterIcon/>],
       iconHref:"/jobs",
       classN:"",
-      text:"text-center font-light text-xs",
-      horiz:"flex",
+      text:"",
+      horiz:"flex items-center gap-2",
       iconStyle:"text-violet-500",
       textStyle:"",
 
@@ -69,8 +69,8 @@ const PostHeaderIcons = [
       icon:[<ArticleIcon/>],
       iconHref:"/messaging",
       classN:"",
-      text:"text-center font-light text-xs",
-      horiz:"flex",
+      text:"",
+      horiz:"flex items-center gap-2",
       iconStyle:"text-orange-500",
       textStyle:"",
   },
@@ -105,7 +105,7 @@ const PostHeader = () => {
         <div className="flex font-semibold
         text-sm text-gray-500 justify-evenly 
          space-x-[4.4vw]
-         p-4 border">
+         p-4">  
         {PostHeaderIcons.map((item)=>(
             <div key={item.id}>
               
@@ -114,6 +114,7 @@ const PostHeader = () => {
                  icon={item.icon}
                  horiz={item.horiz}
                  iconStyle={item.iconStyle}
+                 className={item.classN}
               />
             </div>  
         ))}

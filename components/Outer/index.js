@@ -1,5 +1,5 @@
 import LeftProfile from "./LeftProfile";
-import Messaging from "./Messaging/Messaging";
+
 import RestContent from "./RestContent";
 
 
@@ -8,11 +8,11 @@ import RestContent from "./RestContent";
 const Outer = () => {
     return (
       <>
-      <div className="flex">
+      <div className="flex justify-center">
          <LeftProfile/>
          <RestContent/>        
       </div>
-      <Messaging/>
+      
       </>
     );
 }

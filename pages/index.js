@@ -1,22 +1,33 @@
 
 import Navbar from '../components/Navbar'
 import Outer from '../components/Outer'
-import styles from '../styles/Home.module.css'
+import Messaging from '../components/Outer/RestContent/Messaging'
+import styles from '../styles/Home.module.css';
+
+
+
+
+
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    
       
-
+     <>
       <header>
          <Navbar/>
       </header>
-      <main>
+     <div className={styles.container}>
+      <main className="h-[150rem]">
          <Outer/>
+      
       </main>
       <footer>
 
       </footer>
     </div>
+     </>
   )
 }

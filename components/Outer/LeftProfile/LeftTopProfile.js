@@ -27,7 +27,6 @@ const ImageFiles = [
         iconHref:"/",
         classN:`h-[5rem] w-[5rem] border-4 right-[5rem]
           flex justify-center absolute top-14
-
           border-white rounded-full object-cover`,
         icon:"",
         ht:500,
@@ -42,7 +41,8 @@ const ImageFiles = [
 const LeftTopProfile = () => {
     return (
       <div className="flex flex-col items-center
-       justify-center relative w-[15rem] rounded-tl-xl 
+       justify-center w-[15rem] rounded-tl-xl 
+        relative
        rounded-br-xl border">  
          <div className="flex flex-col items-center
          justify-center w-[15rem]">

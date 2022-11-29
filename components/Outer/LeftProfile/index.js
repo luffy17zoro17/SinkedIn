@@ -6,11 +6,14 @@ import LeftTopProfile from "./LeftTopProfile";
 
 const LeftProfile = () => {
     return (
-      <div>
-       <LeftTopProfile/>
-       <LeftBottomRecent/>
-      </div> 
+      
+      <div className="">       
+        <div><LeftTopProfile/></div>  
+        <div className="sticky top-0"><LeftBottomRecent/></div>  
+      </div>
+    
     );
 }
 
 export default LeftProfile;
+
