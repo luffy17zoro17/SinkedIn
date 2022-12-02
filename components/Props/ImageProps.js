@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 
-const ImageProps = ({src,className,ht,wd,text,title,icon,msg, msgClassN,titleClassN, date, dateClassN, msgleft}) => {
+const ImageProps = ({src,className,ht,wd,text,title,icon,msg, msgClassN,titleClassN,date, dateClassN, msgleft}) => {
 
     return (  
        <div className={text}>

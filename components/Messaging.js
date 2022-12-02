@@ -1,12 +1,12 @@
-import ImageProps from "../../Navbar/AllIcons/ImageProps";
+import ImageProps from "./Props/ImageProps";
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 import TuneIcon from '@mui/icons-material/Tune';
 
-import SearchBar from "../../Navbar/AllIcons/SearchBar/SearchBar";
-import IconProps from "../../Navbar/AllIcons/IconProps";
+import SearchBar from "./Props/SearchBar";
+import IconProps from "./Props/IconProps";
 
 
 
@@ -179,7 +179,7 @@ const MsgProfileImg = [
 const Messaging = () => {
     return (
       <div className="fixed right-0 top-[8rem] border space-y-4 p-4 shadow-sm
-       shadow-black rounded-lg">
+       shadow-black rounded-lg bg-white invisible md:visible">
         <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium flex items-center">
           {MsgProfileImg.map((img)=>(

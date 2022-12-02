@@ -1,4 +1,4 @@
-import IconProps from "../../../Navbar/AllIcons/IconProps";
+import IconProps from "./IconProps";
 
 
 

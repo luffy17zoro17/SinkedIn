@@ -1,8 +1,8 @@
-import ImageProps from "../../../Navbar/AllIcons/ImageProps";
+import ImageProps from "./Props/ImageProps";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
-import FooterText from "./FooterText";
+import FooterText from "./Props/FooterText";
 
 
 
@@ -44,7 +44,7 @@ const DownIcon = [
 const Footer = () => {
     return (
       <div className="items-center text-center flex
-       flex-col">
+       flex-col bg-white z-30 hidden">
 
         {DownIcon.map((item)=>(
         <div key={item.id}> 

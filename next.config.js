@@ -4,7 +4,7 @@ const nextConfig = {
 
   images: {
     domains:['upload.wikimedia.org','w0.peakpx.com'
-    ,"images.unsplash.com"]
+    ,"images.unsplash.com","quotetheanime.com"]
   }
 }
 

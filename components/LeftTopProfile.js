@@ -1,5 +1,5 @@
 
-import ImageProps from '../../Navbar/AllIcons/ImageProps';
+import ImageProps from './Props/ImageProps';
 
 import LeftTopProfileText from './LeftTopProfileText';
 
@@ -41,11 +41,11 @@ const ImageFiles = [
 const LeftTopProfile = () => {
     return (
       <div className="flex flex-col items-center
-       justify-center w-[15rem] rounded-tl-xl 
-        relative
+       justify-center w-[100%] rounded-tl-xl
+        relative mt-[5rem] bg-white
        rounded-br-xl border">  
          <div className="flex flex-col items-center
-         justify-center w-[15rem]">
+         justify-center w-full">
          {ImageFiles.map((item)=> (
           <div key={item.id}> 
             <ImageProps

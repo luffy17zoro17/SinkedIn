@@ -1,4 +1,4 @@
-import ImageProps from "../../../Navbar/AllIcons/ImageProps";
+import ImageProps from "./Props/ImageProps";
 
 const AdImage = [
   {
@@ -19,8 +19,8 @@ const AdImage = [
 
 const Ad = () => {
     return ( 
-      <div className="relative flex
-       flex-col justify-center items-center">
+      <div className="flex z-30 w-[20rem] mt-[0.8rem]
+       flex-col justify-center items-center hidden">
          {AdImage.map((item)=>(
            <ImageProps
               src={item.imgSrc}

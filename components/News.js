@@ -1,4 +1,4 @@
-import TextContent from "../../LeftProfile/TextContent";
+import TextContent from "./Props/TextContent";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 
@@ -54,7 +54,8 @@ const NewsContent = [
 
 const News = () =>{
     return (
-      <div className="p-3 pb-[0.9rem] rounded-bl-xl border rounded-tr-xl">
+      <div className="p-3 mt-[5rem] pb-[0.9rem] rounded-bl-xl 
+        bg-white border rounded-tr-xl px-8 hidden">
          <h1 className="font-medium text-md pb-4">LinkedIn News</h1>
          {NewsContent.map((item) => (
             <div key={item.id}>

@@ -1,4 +1,4 @@
-import TextContent from "./TextContent";
+import TextContent from "./Props/TextContent";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 
@@ -51,9 +51,10 @@ const LeftBottomRecent = () => {
 
     return (
      
-      <div className="flex flex-col px-4 text-xs
-       justify-center w-[15rem] rounded-tl-xl
-       bg-white rounded-br-xl border">  
+      <div className="flex flex-col text-xs
+       justify-start rounded-tl-xl text-start
+        pr-[7rem] px-4 mt-[0.8rem] absolute w-[100%]
+        bg-white rounded-br-xl border">  
         <h1 className="py-2 pt-4">Recent</h1>
         
         {RecentContent.map((item)=> (

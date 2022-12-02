@@ -1,10 +1,12 @@
-import IconProps from "../../../Navbar/AllIcons/IconProps";
-import ImageProps from "../../../Navbar/AllIcons/ImageProps";
+import IconProps from "./Props/IconProps";
+import ImageProps from "./Props/ImageProps";
 
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArticleIcon from '@mui/icons-material/Article';
+
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 const PostHeaderImg= [
@@ -13,7 +15,7 @@ const PostHeaderImg= [
       title:"",
       imgSrc:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
       iconHref:"/",
-      classN:"rounded-full h-[3rem] w-[3rem] object-cover",
+      classN:"rounded-full h-[3rem] w-[3.5rem] object-cover",
       icon:"",
       ht:700,
       wd:700,
@@ -80,10 +82,14 @@ const PostHeaderIcons = [
 
 
 
+
 const PostHeader = () => {
     return (
-      <div className="rounded-xl border p-3">
-        <div className="flex mx-3 gap-3">
+     <> 
+     <div className="flex
+       mt-[28rem] md:mt-[-53.5rem]"> 
+      <div className="rounded-xl border w-full bg-white">
+        <div className="flex mx-3 pt-3 gap-3">
         <div className="">
         {PostHeaderImg.map((item)=>(
           <div key={item.id}>
@@ -96,10 +102,10 @@ const PostHeader = () => {
           </div>
         ))}
         </div>
-        <div className="border text-gray-500 rounded-3xl text-sm font-semibold
-          border-gray-400 pl-3 py-3 pr-[23rem]">
+        <span className="border text-gray-500 rounded-3xl text-sm font-semibold
+          border-gray-400 p-3 w-[100%]">
            Start a post
-        </div>
+        </span>
         </div>
 
         <div className="flex font-semibold
@@ -120,6 +126,12 @@ const PostHeader = () => {
         ))}
         </div>
       </div>  
+     </div> 
+     <div className="flex text-xs items-center text-gray-500">
+     <hr className="w-[80%] h-[0.1rem] border-gray-400 my-4"/>&nbsp;&nbsp;Sort by: 
+     <b className="text-black">&nbsp;Top<ArrowDropDownIcon/></b>
+     </div>
+     </>
     );
 }
 

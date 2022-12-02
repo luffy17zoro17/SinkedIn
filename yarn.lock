@@ -1394,6 +1394,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cloudinary-core@npm:^2.13.0":
+  version: 2.13.0
+  resolution: "cloudinary-core@npm:2.13.0"
+  peerDependencies:
+    lodash: ">=4.0"
+  checksum: 5485fbc094b0722f6d4c6becfde431d3042c3c926a69c4bc2f6b373ac059b9b798703845c6cbf4a55ee2eb1c7718f5ec5130772117419755015b04dabd369be5
+  languageName: node
+  linkType: hard
+
+"cloudinary-react@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "cloudinary-react@npm:1.8.1"
+  dependencies:
+    cloudinary-core: ^2.13.0
+    prop-types: ^15.8.1
+  peerDependencies:
+    react: ^16.3.3 || ^17.0.0 || ^18.0.0
+  checksum: 949ceb81fa5ce441abafedae84174bb0f6fce521ba6010289993b3cb9b38a31ce4c95998d00a705e3516ade8e5875b74eea9f605fa14108e03ba5bf83ff9bf9a
+  languageName: node
+  linkType: hard
+
 "clsx@npm:^1.0.4, clsx@npm:^1.2.1":
   version: 1.2.1
   resolution: "clsx@npm:1.2.1"
@@ -2125,12 +2146,14 @@ __metadata:
     "@mui/material": ^5.10.14
     add: ^2.0.6
     autoprefixer: ^10.4.13
+    cloudinary-react: ^1.8.1
     eslint: 8.28.0
     eslint-config-next: 13.0.4
     next: 13.0.4
     postcss: ^8.4.19
     react: 18.2.0
     react-dom: 18.2.0
+    react-intersection-observer: ^9.4.1
     tailwindcss: ^3.2.4
     yarn: ^1.22.19
   languageName: unknown
@@ -3645,6 +3668,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-intersection-observer@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "react-intersection-observer@npm:9.4.1"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 13d1c36658470a781d8db8870dbd272c5b4b32329fa69c27ee96424de4e1599526a9bf2a91ea59922c18323c97d6909f0ac120c5af6076d1c01e654b43fb03c1
   languageName: node
   linkType: hard
 
