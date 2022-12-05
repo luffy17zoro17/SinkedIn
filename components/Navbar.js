@@ -24,6 +24,7 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 const SearchBarItem = [
     {
+        id:1,
         placeholder:"Search",
         icons:[""],
         inputClass:`bg-gray-200 pl-10 outline-none
@@ -181,7 +182,7 @@ const Navbar = () => {
         {NavbarImages.map((img)=>(          
           <div key={img.id}>          
             <ImageProps
-               className={img.classN}
+               classN={img.classN}
                id={img.id}
                ht={img.ht}
                wd={img.wd}
@@ -196,31 +197,32 @@ const Navbar = () => {
           </div>
         ))}
     
-        {SearchBarItem.map((item) => (
+        {SearchBarItem.map((srch) => (
+          <div key={srch.id}>
            <SearchBar
-             placeholder={item.placeholder}
-             icon={item.icons}
-             inputClass={item.inputClass}
-             title={item.title}
-             titleClass={item.titleClass}
-             searchIconClass={item.searchIconClass}
+             placeholder={srch.placeholder}
+             icon={srch.icons}
+             inputClass={srch.inputClass}
+             title={srch.title}
+             titleClass={srch.titleClass}
+             searchIconClass={srch.searchIconClass}
            /> 
-
+          </div> 
         ))}
         
           
-        {NavbarIcons.map((item)=>(
-          <div key={item.id}>          
+        {NavbarIcons.map((ico)=>(
+          <div key={ico.id}>          
             <IconProps
-               id={item.id}
-               title={item.id===6 ? [item.title,item.icon[1]] : item.title}
-               icon={(item.id===6) ? (item.icon[0]) : (item.icon)}
-               href={item.iconHref}
-               text={item.text}
-               textStyle={item.textStyle}
-               horiz={item.horiz}
-               classN={item.id===6 ? item.classN : ""}
-               iconStyle={item.iconStyle}
+               id={ico.id}
+               title={ico.id===6 ? [ico.title,ico.icon[1]] : ico.title}
+               icon={(ico.id===6) ? (ico.icon[0]) : (ico.icon)}
+               href={ico.iconHref}
+               text={ico.text}
+               textStyle={ico.textStyle}
+               horiz={ico.horiz}
+               classN={ico.id===6 ? ico.classN : ""}
+               iconStyle={ico.iconStyle}
             />        
           </div>  
         ))}  

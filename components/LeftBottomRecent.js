@@ -50,10 +50,10 @@ const RecentContent = [
 const LeftBottomRecent = () => {
 
     return (
-     
-      <div className="flex flex-col text-xs
-       justify-start rounded-tl-xl text-start
-        pr-[7rem] px-4 mt-[0.8rem] absolute w-[100%]
+      <>
+      <div className="flex flex-col text-xs pb-2
+         rounded-tl-xl text-start pl-4 z-10
+        pr-[7rem] mt-[0.8rem] absolute w-[100%]
         bg-white rounded-br-xl border">  
         <h1 className="py-2 pt-4">Recent</h1>
         
@@ -75,15 +75,15 @@ const LeftBottomRecent = () => {
         ))}
         <h3 className="text-xs text-gray-600 py-2 px-3
          font-semibold">Show more <ArrowDownwardIcon className="text-[1.3rem]"/></h3>
-        <hr className="border-y-1 w-full 
-         flex justify-center mt-3"/> 
-        <h3 className="font-bold py-4 
-          text-gray-600 text-center
-           w-full text-[1rem]">
-        
-            Discover more
-        </h3>
+      
       </div>  
+      <h3 className="font-bold py-4 w-[100%] absolute
+       mt-[22rem] bg-white rounded-br-xl
+      text-gray-600 text-center border-t-[0.1rem]
+       px-4 text-[1rem]">
+        Discover more
+      </h3>
+      </>
     
      
     );

@@ -97,7 +97,7 @@ const PostHeader = () => {
              src={item.imgSrc}
              ht={item.ht}
              wd={item.wd}
-             className={item.classN}
+             classN={item.classN}
           />
           </div>
         ))}

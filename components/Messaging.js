@@ -16,7 +16,8 @@ const MsgSearchBar = [
       placeholder:"Search Messages",
       icon:[TuneIcon],
       inputClass:`bg-gray-200 pl-10 outline-none
-           py-2 placeholder-gray-600 rounded-md text-sm`
+           py-2 placeholder-gray-600 rounded-md text-sm`,
+      searchIconClass:"fixed px-2",     
   }
 ]
 
@@ -115,7 +116,7 @@ const MessageImages= [
   },
   {
   id:6,
-  title:"Robin",
+  title:"Nico Robin",
   imgSrc:`https://w0.peakpx.com/wallpaper/350/172/HD-wallpaper-nico-robin-icon-nico-robin-one-piece.jpg`,
   iconHref:"/thomasmathew",
   classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
@@ -130,6 +131,96 @@ const MessageImages= [
   wd:500,
   text:`flex gap-3 px-3 justify-between`,
 
+  },
+  {
+    id:7,
+    title:"Franky",
+    imgSrc:`https://w0.peakpx.com/wallpaper/985/989/HD-wallpaper-franky-anime-one-piece.jpg`,
+    iconHref:"/thomasmathew",
+    classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
+    icon:"",
+    titleClassN:"text-[0.9rem]",
+    msgClassN:"text-xs text-gray-600",
+    msgleft:"flex gap-3",
+    message:"You: :)",
+    dateClassN:"text-xs text-violet-700",
+    date:"Nov 20",
+    ht:120,
+    wd:120,
+    text:`flex gap-3 px-3 justify-between`,
+  
+  },
+  {
+      id:8,
+      title:"Tony Tony Chopper",
+      imgSrc:`https://w0.peakpx.com/wallpaper/950/449/HD-wallpaper-tony-tony-chopper-aesthetic-pink-icon-one-piece-anime-rosa.jpg`,
+      iconHref:"/thomasmathew",
+      classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
+      icon:"",
+      titleClassN:"text-[0.9rem]",
+      msgClassN:"text-xs text-gray-600",
+      msgleft:"flex gap-3",
+      message:"You: :)",
+      dateClassN:"text-xs text-violet-700",
+      date:"Nov 18",
+      ht:270,
+      wd:270,
+      text:`flex gap-3 px-3 justify-between`,
+    
+  },
+  {
+        id:9,
+        title:"Brook",
+        imgSrc:`https://api.duniagames.co.id/api/content/upload/file/3239901841635146421.jpg`,
+        iconHref:"/thomasmathew",
+        classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
+        icon:"",
+        titleClassN:"text-[0.9rem]",
+        msgClassN:"text-xs text-gray-600",
+        msgleft:"flex gap-3",
+        message:"You: :)",
+        dateClassN:"text-xs text-violet-700",
+        date:"Nov 17",
+        ht:500,
+        wd:500,
+        text:`flex gap-3 px-3 justify-between`,
+      
+  },
+  {
+          id:10,
+          title:"Jinbe",
+          imgSrc:`https://w0.peakpx.com/wallpaper/857/367/HD-wallpaper-jinbe-s-current-wanted-poster-one-piece-character-bounty-poster-jinbei-bounty.jpg`,
+          iconHref:"/thomasmathew",
+          classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
+          icon:"",
+          titleClassN:"text-[0.9rem]",
+          msgClassN:"text-xs text-gray-600",
+          msgleft:"flex gap-3",
+          message:"You: :)",
+          dateClassN:"text-xs text-violet-700",
+          date:"Nov 15",
+          ht:500,
+          wd:500,
+          text:`flex gap-3 px-3 justify-between`,
+        
+  },
+  {
+    id:11,
+    title:"Yamato",
+    imgSrc:`https://w0.peakpx.com/wallpaper/240/123/HD-wallpaper-yamato-anime-one-piece-manga.jpg`,
+    iconHref:"/thomasmathew",
+    classN:"h-[3rem] w-[3rem] rounded-full object-cover flex",
+    icon:"",
+    titleClassN:"text-[0.9rem]",
+    msgClassN:"text-xs text-gray-600",
+    msgleft:"flex gap-3",
+    message:"You: :)",
+    dateClassN:"text-xs text-violet-700",
+    date:"Nov 15",
+    ht:100,
+    wd:100,
+    text:`flex gap-3 px-3 justify-between`,
+  
   },
 ]
 
@@ -178,7 +269,9 @@ const MsgProfileImg = [
 
 const Messaging = () => {
     return (
-      <div className="fixed right-0 top-[8rem] border space-y-4 p-4 shadow-sm
+      
+      <div className="w-[20rem] right-0 z-40 top-[19vh]
+        space-y-4 p-4 shadow-sm fixed bottom-0
        shadow-black rounded-lg bg-white invisible md:visible">
         <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium flex items-center">
@@ -187,7 +280,7 @@ const Messaging = () => {
                src={img.imgSrc}
                ht={img.ht}
                wd={img.wd}
-               className={img.classN}
+               classN={img.classN}
              />
            ))}Messaging
         </h2>
@@ -201,14 +294,19 @@ const Messaging = () => {
         ))}
         </div>
         </div>
+      
          
         {MsgSearchBar.map((item)=>(
               <SearchBar
                  placeholder={item.placeholder}
                  inputClass={item.inputClass}
                  icon={item.icon}
+                 searchIconClass={item.searchIconClass}
               />
         ))}
+      
+        <div className="absolute bg-white z-20 w-[19rem]
+          bottom-0 overflow-y-auto top-[8rem]">
         {MessageImages.map((item)=>(
           <div key={item.id}>
              
@@ -223,12 +321,16 @@ const Messaging = () => {
                 msgleft={item.msgleft}
                 date={item.date}
                 dateClassN={item.dateClassN}
-                className={item.classN}
+                classN={item.classN}
                 text={item.text}
              />
+             <hr className="my-4"/>
           </div>  
         ))}
-      </div>  
+        </div>
+        </div>
+      
+    
     );
 }
 

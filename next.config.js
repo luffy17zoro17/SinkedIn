@@ -4,7 +4,8 @@ const nextConfig = {
 
   images: {
     domains:['upload.wikimedia.org','w0.peakpx.com'
-    ,"images.unsplash.com","quotetheanime.com"]
+    ,"images.unsplash.com","quotetheanime.com","api.duniagames.co.id",
+    "i.pinimg.com"]
   }
 }
 
