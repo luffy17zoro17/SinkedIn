@@ -51,10 +51,11 @@ const LeftBottomRecent = () => {
 
     return (
       <>
+      
       <div className="flex flex-col text-xs pb-2
          rounded-tl-xl text-start pl-4 z-10
-        pr-[7rem] mt-[0.8rem] absolute w-[100%]
-        bg-white rounded-br-xl border">  
+        pr-[7rem] mt-[0.8rem]
+        bg-white md:w-[14rem]">  
         <h1 className="py-2 pt-4">Recent</h1>
         
         {RecentContent.map((item)=> (
@@ -77,12 +78,13 @@ const LeftBottomRecent = () => {
          font-semibold">Show more <ArrowDownwardIcon className="text-[1.3rem]"/></h3>
       
       </div>  
-      <h3 className="font-bold py-4 w-[100%] absolute
-       mt-[22rem] bg-white rounded-br-xl
+      <h3 className="font-bold py-4
+       bg-white rounded-br-xl
       text-gray-600 text-center border-t-[0.1rem]
-       px-4 text-[1rem]">
+       px-4 text-[1rem] md:w-[14rem]">
         Discover more
       </h3>
+   
       </>
     
      

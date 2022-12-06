@@ -10,6 +10,7 @@ const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
 
     return (
       <>
+        <div className="flex mx-4 justify-between pt-2">
         <div className={picHoriz}>
         <div>  
         <Image
@@ -23,10 +24,12 @@ const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
         <div>
         <h2 className={titleClass}>{title}
         <span className={currentClass}>{current}</span>
-        <span className={moreClass}>{moreIcon}</span></h2>
+        </h2>
         <p className={detailClass}>{detail}</p>
         <span className={timeiconClass}>{time}{icon}</span>
         </div>
+        </div>
+        <span className={moreClass}>{moreIcon}</span>
         </div>
         <p className={textClass}>{text}</p>
 

@@ -7,8 +7,8 @@ import LeftBottomRecent from "./LeftBottomRecent";
 
 const StickyComponents = () => {
     return (
-      <div className="flex justify-between">
-         <div>
+      <div className="flex justify-center">
+         <div className="w-[100%] sm:mx-[4rem] md:mx-[2rem]">
          <LeftBottomRecent/>
          </div>
          <div>

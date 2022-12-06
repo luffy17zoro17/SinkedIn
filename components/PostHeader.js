@@ -86,8 +86,8 @@ const PostHeaderIcons = [
 const PostHeader = () => {
     return (
      <> 
-     <div className="flex
-       mt-[28rem] md:mt-[-53.5rem]"> 
+     <div className="flex mt-[3rem] sm:mx-[4rem]
+        md:mt-[-29.5rem] md:mx-0 md:mr-[8rem]"> 
       <div className="rounded-xl border w-full bg-white">
         <div className="flex mx-3 pt-3 gap-3">
         <div className="">
@@ -127,7 +127,7 @@ const PostHeader = () => {
         </div>
       </div>  
      </div> 
-     <div className="flex text-xs items-center text-gray-500">
+     <div className="flex text-xs items-center text-gray-500 sm:mx-[4rem] md:mx-0">
      <hr className="w-[80%] h-[0.1rem] border-gray-400 my-4"/>&nbsp;&nbsp;Sort by: 
      <b className="text-black">&nbsp;Top<ArrowDropDownIcon/></b>
      </div>

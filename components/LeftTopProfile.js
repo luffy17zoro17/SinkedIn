@@ -45,10 +45,11 @@ const ImageFiles = [
 
 const LeftTopProfile = () => {
     return (
+      <div className="flex justify-center md:w-[18rem]"> 
       <div className="flex flex-col items-center
        justify-center w-[100%] rounded-tl-xl
         relative mt-[5rem] bg-white
-       rounded-br-xl border">  
+       rounded-br-xl border sm:mx-[4rem] md:mx-[2rem]">  
          <div className="flex flex-col items-center
          justify-center w-full">
          {ImageFiles.map((item)=> (
@@ -68,6 +69,7 @@ const LeftTopProfile = () => {
          
          
       </div>  
+      </div>
     )
 }
 

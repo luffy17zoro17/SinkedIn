@@ -85,14 +85,14 @@ const PostListVideo = [
     ht:"280",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
-    moreClass:`absolute right-[1.3rem] text-gray-600`,
+    moreClass:`text-gray-600`,
     title:"Thomas Mathew",
     titleClass:"text-sm font-bold",
     current:" • You",
     currentClass:"text-sm text-gray-400 font-medium",
     following:"",
     detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
-    detailClass:"text-violet-800 text-xs font-light",
+    detailClass:"text-violet-800 text-xs font-light w-[20rem]",
     timeiconClass:"text-gray-500 text-xs",
     time:"now • ",
     icon:["",<PublicIcon className="text-[1rem]"/>],
@@ -127,7 +127,7 @@ const PostListVideo = [
     ht:"280",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
-    moreClass:"absolute right-[1.3rem] text-gray-600",
+    moreClass:"text-gray-600",
     title:"Nico Robin",
     titleClass:"font-bold",
     current:" (She/Her) • 1st",
@@ -169,7 +169,7 @@ const PostListVideo = [
     ht:"280",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
-    moreClass:"absolute right-[1.3rem] text-gray-600",
+    moreClass:"text-gray-600",
     title:"Roronoa Zoro",
     titleClass:"font-bold",
     current:"",
@@ -209,7 +209,7 @@ const PostListVideo = [
     ht:"280",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
-    moreClass:"absolute right-[1.3rem] text-gray-600",
+    moreClass:"text-gray-600",
     title:["Vinsmoke Sanji",""],
     titleClass:"font-bold",
     current:"",
@@ -247,7 +247,7 @@ const PostListVideo = [
     ht:"280",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
-    moreClass:"absolute right-[1.3rem] text-gray-600",
+    moreClass:"text-gray-600",
     title:["SinkedIn",""],
     titleClass:"font-bold",
     current:"",
@@ -300,9 +300,9 @@ const PostListVideo = [
 const PostList = () => {
 
     return (
+      <div className="w-[100%]">
+      <div className="flex flex-col sm:mx-[4rem] md:mx-0 md:mr-[8rem]">
       
-      <div className="flex flex-col w-[100%]">
-      <div className="bg-gray-100">
       <div className="rounded-xl">
         
        
@@ -367,7 +367,8 @@ const PostList = () => {
          </div> 
         ))}     
       </div> 
-      </div> 
+      
+      </div>
       </div>
     );  
     

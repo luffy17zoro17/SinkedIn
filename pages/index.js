@@ -7,10 +7,10 @@ import LeftTopProfile from '../components/LeftTopProfile';
 import Messaging from '../components/Messaging'
 import News from '../components/News';
 
-import PostHeader from '../components/PostHeader';
-import PostList from '../components/PostList';
+
 
 import StickyComponents from "../components/StickyComponents"
+import Posts from '../components/Posts';
 
 
 
@@ -27,20 +27,19 @@ export default function Home() {
       <Navbar/>
    </header>
   
-   <div className="bg-gray-100 px-[0vw] lg:px-[3vw]">    
+   <div className="bg-gray-100">    
      <div>
        <div className="flex justify-between">
         <div><LeftTopProfile/></div>
         <div><News/></div>  
        </div>
 
-   
-       <div className="top-[5rem] md:sticky">
+       <div className="md:flex">
+       <div className="self-start top-[5rem] md:sticky">
             <StickyComponents/>
        </div>  
-       
-       <div><PostHeader/></div>   
-       <div><PostList/></div>
+       <div><Posts/></div>
+       </div>
      </div>  
    </div> 
    
