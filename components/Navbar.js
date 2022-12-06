@@ -27,11 +27,14 @@ const SearchBarItem = [
         id:1,
         placeholder:"Search",
         icons:[""],
-        inputClass:`bg-gray-200 pl-10 outline-none
+        inputClass:`bg-gray-200 pl-9 outline-none top-[0.6rem] 
+          shadow-inner shadow-gray-400
+              left-[4rem]
              py-2 placeholder-gray-600 rounded-md text-sm hidden lg:flex`,
         title:"Search",
-        titleClass:"text-xs mt-5 font-light hidden",  
-        searchIconClass:"lg:fixed lg:px-2",  
+        titleClass:`shadow shadow-gray-300 px-1 text-xs font-light hidden md:flex lg:hidden`,  
+        searchIconClass:"lg:fixed lg:z-30 lg:top-3 lg:px-2 lg:pt-1",
+        topClass:"flex flex-col items-center justify-center text-center z-30",  
     }
 ]
 
@@ -42,7 +45,9 @@ const NavbarImages= [
         title:"",
         imgSrc:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
         iconHref:"/",
-        classN:"rounded-full h-[2rem] w-[2rem] object-cover",
+        classN:`rounded-full h-[2.8rem] w-[2.8rem] object-cover fixed border-4
+          border-cyan-400 shadow shadow-black
+         top-1 left-3 sm:left-4 xl:left-[5rem]`,
         icon:"",
         msgleft:"",
         titleClassN:"",
@@ -59,14 +64,14 @@ const NavbarImages= [
         iconHref:"/thomasmathew",
         classN:"h-[1.4rem] w-[1.4rem] rounded-full object-cover",
         icon:<KeyboardArrowDownIcon/>,
-        msgleft:`flex flex-col items-center mt-[0.8rem] ml-[11rem] 
-          sm:ml-[18rem] lg:mt-[0.2rem]`,
-        titleClassN:"hidden lg:flex",
+        msgleft:`flex flex-col items-center mt-[0.8rem]
+         md:mt-[0.2rem]`,
+        titleClassN:"flex items-center shadow px-1 shadow-gray-300 hidden md:flex",
         ht:500,
         wd:500,
-        text:`font-light text-xs flex flex-col items-center
-         fixed left-0 justify-center
-         w-[100%] top-1 lg:ml-[10vw] xl:ml-[8.5vw]`,
+        text:`font-light text-xs absolute
+         justify-center flex left-[62%]
+         top-1 lg:pl-[8rem]`,
     },
 ]
 
@@ -84,7 +89,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"",
         iconStyle:"",
-        textStyle:"hidden lg:flex"
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex"
 
      
  
@@ -98,7 +103,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"",
         iconStyle:"",
-        textStyle:"hidden lg:flex"
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex"
 
     },
     {
@@ -110,7 +115,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"",
         iconStyle:"",
-        textStyle:"hidden lg:flex",
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex",
 
     },
     {
@@ -122,7 +127,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"",
         iconStyle:"",
-        textStyle:"hidden lg:flex",
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex",
     },
     {
         id:5,
@@ -131,9 +136,9 @@ const NavbarIcons = [
         iconHref:"/notifications",
         classN:"",
         text:"text-center font-light text-xs",
-        horiz:"",
+        horiz:"invisible lg:visible",
         iconStyle:"",
-        textStyle:"hidden lg:flex",
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden lg:flex",
 
     },
  
@@ -143,10 +148,10 @@ const NavbarIcons = [
         icon:[<AppsIcon/>,<KeyboardArrowDownIcon/>],
         iconHref:"/Work",
         classN:"",
-        text:"text-center font-light text-xs pl-[6rem]",
+        text:"text-center font-light text-xs pl-[6vw] pt-[0.4rem]",
         horiz:"flex flex-col items-center",
         iconStyle:"hidden sm:flex",
-        textStyle:"hidden lg:flex",
+        textStyle:"shadow px-1 shadow-gray-300 flex items-center hidden md:flex",
 
     },
     {
@@ -158,7 +163,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"flex flex-col items-center",
         iconStyle:"hidden sm:flex",
-        textStyle:"hidden lg:flex",
+        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex",
     }
 ]
 
@@ -174,9 +179,9 @@ const Navbar = () => {
     
     return (
         <>
-        <div className="flex items-center w-[100%] border z-30 shadow shadow-black 
-        justify-center space-x-[1rem] fixed top-0 bg-white h-[3.5rem]
-         sm:space-x-[2rem] lg:space-x-[2vw]">
+        <div className="flex items-center border z-30 shadow shadow-black 
+        justify-center fixed top-0 bg-white h-[3.5rem] w-full
+         space-x-[3%] px-3">
 
          
         {NavbarImages.map((img)=>(          
@@ -223,6 +228,7 @@ const Navbar = () => {
                horiz={ico.horiz}
                classN={ico.id===6 ? ico.classN : ""}
                iconStyle={ico.iconStyle}
+               topClass={ico.topClass}
             />        
           </div>  
         ))}  

@@ -33,8 +33,8 @@ const PostHeaderIcons = [
       icon:[<ThumbUpAltIcon/>],
       iconHref:"/",
       classN:"",
-      text:"mt-[2rem]",
-      horiz:"flex items-center gap-2",
+      text:"",
+      horiz:"flex items-center gap-2 pt-[1rem]",
       iconStyle:"text-pink-500",
       textStyle:"",
    
@@ -46,8 +46,8 @@ const PostHeaderIcons = [
       icon:[<CommentIcon/>],
       iconHref:"/mynetwork",
       classN:"",
-      text:"mt-[2rem]",
-      horiz:"flex items-center gap-2",
+      text:"",
+      horiz:"flex items-center gap-2 pt-[1rem]",
       iconStyle:"text-pink-500",
       textStyle:"",
 
@@ -58,8 +58,8 @@ const PostHeaderIcons = [
       icon:[<RepeatOnIcon/>],
       iconHref:"/jobs",
       classN:"",
-      text:"mt-[2rem]",
-      horiz:"flex items-center gap-2",
+      text:"",
+      horiz:"flex items-center gap-2 pt-[1rem]",
       iconStyle:"text-pink-500",
       textStyle:"",
 
@@ -70,8 +70,8 @@ const PostHeaderIcons = [
       icon:[<SendIcon/>],
       iconHref:"/messaging",
       classN:"",
-      text:"mt-[2rem]",
-      horiz:"flex items-center gap-2",
+      text:"",
+      horiz:"flex items-center gap-2 pt-[1rem]",
       iconStyle:"text-pink-500",
       textStyle:"",
   },
@@ -112,11 +112,11 @@ const PostListVideo = [
     iwd:"",
     imgClass:"",
     reactions:[
-       <ThumbUpAltIcon className="text-green-400"/>,
-       <FavoriteIcon className="text-red-600"/>,
-       <LightbulbCircleIcon className="text-yellow-600"/>,],
-    reactionsClass:`scale-[0.7] absolute left-[-5rem]
-     my-2 w-[132%] text-lg flex justify-between`, 
+       <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
+       <FavoriteIcon className="text-red-600 text-[1rem]"/>,
+       <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,],
+    reactionsClass:`w-[100%] font-light px-5 pt-3
+     flex justify-between text-[0.8rem]`, 
     reactionCount:" 6",  
     interactionCount:"8 comments",
     
@@ -154,12 +154,12 @@ const PostListVideo = [
     imgClass:"object-cover",
   
     reactions:[,
-    <ThumbUpAltIcon className="text-green-400"/>,
-     <FavoriteIcon className="text-red-600"/>,
-     <LightbulbCircleIcon className="text-yellow-600"/>,
-     <CelebrationIcon className="text-violet-600"/>],
-    reactionsClass:`scale-[0.7] absolute left-[-5rem]
-    my-2 w-[132%] text-lg flex justify-between`,
+    <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
+     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
+     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,
+     <CelebrationIcon className="text-violet-600 text-[1rem]"/>],
+    reactionsClass:`w-[100%] font-light px-5 pt-3
+     flex justify-between text-[0.8rem]`,
     reactionCount:" 34",  
     interactionCount:"49 comments • 12 reposts",
    },
@@ -195,11 +195,11 @@ const PostListVideo = [
     iwd:"400",
     imgClass:"object-cover w-[100%] h-[18rem] rounded-t-full",
 
-    reactions:[<ThumbUpAltIcon className="text-green-400"/>,
-     <FavoriteIcon className="text-red-600"/>,
-     <LightbulbCircleIcon className="text-yellow-600"/>],
-    reactionsClass:`scale-[0.7] absolute left-[-5rem]
-    my-2 w-[132%] text-lg flex justify-between`,
+    reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
+     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
+     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>],
+    reactionsClass:`w-[100%] font-light px-5 pt-3
+     flex justify-between text-[0.8rem]`,
     reactionCount:" 15",  
     interactionCount:"20 comments • 4 reposts",
    },
@@ -235,9 +235,9 @@ const PostListVideo = [
     iwd:"",
     imgClass:"",
 
-    reactions:[<ThumbUpAltIcon className="text-green-400"/>,"","","",],
-    reactionsClass:`scale-[0.7] absolute left-[-5rem]
-    my-2 w-[132%] text-lg flex justify-between`,
+    reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,"","","",],
+    reactionsClass:`w-[100%] font-light px-5 pt-3
+      flex justify-between text-[0.8rem]`,
     reactionCount:" 11",  
     interactionCount:"17 comments • 4 reposts",
    },
@@ -266,7 +266,8 @@ const PostListVideo = [
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
     iconHref:"/",
-    prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
+    prClass:`rounded-full h-[3rem] w-[3rem] object-cover border-4 
+     border-cyan-400 shadow shadow-black`,
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
@@ -277,12 +278,12 @@ const PostListVideo = [
     imgClass:"",
 
     reactions:[
-      <ThumbUpAltIcon className="text-green-400"/>,
-      <FavoriteIcon className="text-red-600"/>,
-      <CelebrationIcon className="text-violet-600"/>,
+      <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
+      <FavoriteIcon className="text-red-600 text-[1rem]"/>,
+      <CelebrationIcon className="text-violet-600 text-[1rem]"/>,
     ],
-    reactionsClass:`scale-[0.7] absolute left-[-5rem]
-    my-2 w-[132%] text-lg flex justify-between`,
+    reactionsClass:`w-[100%] font-light px-5 pt-3
+     flex justify-between text-[0.8rem]`,
     reactionCount:" 214",  
     interactionCount:"545 comments • 22 reposts",
    }
@@ -351,7 +352,7 @@ const PostList = () => {
           p-4">  
           {PostHeaderIcons.map((item)=>(
             <div key={item.id}>
-              <hr className="mt-[1.4rem] left-0 w-[100%] absolute"/>
+              <hr className="left-0 w-[100%] absolute"/>
               <IconProps
                  title={item.title}
                  icon={item.icon}
