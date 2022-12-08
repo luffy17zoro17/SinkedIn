@@ -7,6 +7,7 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArticleIcon from '@mui/icons-material/Article';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import StartAPost from "./StartAPost";
 
 
 const PostHeaderImg= [
@@ -83,7 +84,8 @@ const PostHeaderIcons = [
 
 
 
-const PostHeader = () => {
+const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
+   zeroClass, oneClass, threeClass}) => {
     return (
    
      <div className="flex flex-col mt-[3rem] sm:mx-[4rem]
@@ -102,10 +104,22 @@ const PostHeader = () => {
           </div>
         ))}
         </div>
-        <span className="border text-gray-500 rounded-3xl text-sm font-semibold
-          border-gray-400 p-3 w-[100%]">
+        <span onMouseDown={()=>setPostOpen(true)} 
+        className="border text-gray-500 rounded-3xl text-sm font-semibold
+          border-gray-400 p-3 w-[100%] cursor-pointer">
            Start a post
         </span>
+
+        {postOpen === true && (
+         <StartAPost
+           title={title}
+           imgSrc={imgSrc}
+           icon={icon}
+           zeroClass={zeroClass}
+           oneClass={oneClass}
+           threeClass={threeClass}
+         />)} 
+
         </div>
 
         <div className="flex font-semibold

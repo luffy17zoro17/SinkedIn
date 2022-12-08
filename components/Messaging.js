@@ -230,7 +230,7 @@ const MsgHeaderIcons = [
   {
       id:1,
       title:"Home",
-      icon:<MoreHorizIcon/>,
+      icon:<MoreHorizIcon className="text-gray-400"/>,
       iconHref:"/",
       
 
@@ -238,7 +238,7 @@ const MsgHeaderIcons = [
   {
       id:2,
       title:"My Network",
-      icon:<OpenInNewIcon/>,
+      icon:<OpenInNewIcon className="text-gray-400"/>,
       iconHref:"/mynetwork",
   },
   {
@@ -290,7 +290,10 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
         <div className="flex gap-2">
         {MsgHeaderIcons.map((item)=>(
           <div key={item.id}>
-            <button onClick={()=>setMsgOpen(!msgOpen)}> 
+            <button 
+              onClick={item.id===3 && (()=>setMsgOpen(!msgOpen))}
+              disabled={item.id!==3}
+            > 
              <IconProps
                 icon={item.icon}
              />
