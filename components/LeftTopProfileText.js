@@ -16,10 +16,11 @@ const LeftTopProfileText = () => {
         
         <h4 className="font-bold text-gray-500 text-xs 
           justify-around leading-5 pt-4
-         flex text-justify">
-           <span>
+         flex text-justify w-full">
+           <span className="w-[10rem]">
                Who's viewed your profile<br/>  
-               Impressions of your posts</span>
+               Impressions of your posts
+           </span>
            <b className="text-blue-500 text-end truncate">
              150<br/>
              1,130

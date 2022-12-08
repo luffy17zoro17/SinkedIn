@@ -5,7 +5,7 @@ import PostList from '../components/PostList';
 
 const Posts = () => {
     return (
-      <div>
+      <div className="">
         <div><PostHeader/></div>   
         <div><PostList/></div>
       </div>

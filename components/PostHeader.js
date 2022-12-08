@@ -85,9 +85,9 @@ const PostHeaderIcons = [
 
 const PostHeader = () => {
     return (
-     <> 
-     <div className="flex mt-[3rem] sm:mx-[4rem]
-        md:mt-[-29.5rem] md:mx-0 md:mr-[8rem]"> 
+   
+     <div className="flex flex-col mt-[3rem] sm:mx-[4rem]
+        md:border-4 md:border-black md:mx-0 md:mt-[5.3rem]"> 
       <div className="rounded-xl border w-full bg-white">
         <div className="flex mx-3 pt-3 gap-3">
         <div className="">
@@ -110,7 +110,7 @@ const PostHeader = () => {
 
         <div className="flex font-semibold
         text-sm text-gray-500 justify-evenly 
-         space-x-[4.4vw]
+         space-x-[1rem]
          p-4">  
         {PostHeaderIcons.map((item)=>(
             <div key={item.id}>
@@ -125,13 +125,19 @@ const PostHeader = () => {
             </div>  
         ))}
         </div>
-      </div>  
+      </div>
+
+     <span className="flex text-xs items-center text-gray-500 text-end">
+       <hr className="h-[0.1rem] border-gray-400 my-4 w-full"/>
+       <span className="w-[8rem]">
+       <span>Sort by:</span> 
+       <b className="text-black">&nbsp;Top<ArrowDropDownIcon/></b>
+       </span>
+     </span>
+
      </div> 
-     <div className="flex text-xs items-center text-gray-500 sm:mx-[4rem] md:mx-0">
-     <hr className="w-[80%] h-[0.1rem] border-gray-400 my-4"/>&nbsp;&nbsp;Sort by: 
-     <b className="text-black">&nbsp;Top<ArrowDropDownIcon/></b>
-     </div>
-     </>
+     
+  
     );
 }
 

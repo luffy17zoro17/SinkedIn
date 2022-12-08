@@ -1,5 +1,5 @@
 
-//"https://www.youtube.com/embed/jnB9T5w7-7w?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_
+
 import IconProps from "./Props/IconProps";
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
@@ -89,10 +89,10 @@ const PostListVideo = [
     title:"Thomas Mathew",
     titleClass:"text-sm font-bold",
     current:" • You",
-    currentClass:"text-sm text-gray-400 font-medium",
+    currentClass:"text-sm text-gray-500 font-medium",
     following:"",
     detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
-    detailClass:"text-violet-800 text-xs font-light w-[20rem]",
+    detailClass:"text-violet-800 text-xs font-light w-[18rem]",
     timeiconClass:"text-gray-500 text-xs",
     time:"now • ",
     icon:["",<PublicIcon className="text-[1rem]"/>],
@@ -130,8 +130,8 @@ const PostListVideo = [
     moreClass:"text-gray-600",
     title:"Nico Robin",
     titleClass:"font-bold",
-    current:" (She/Her) • 1st",
-    currentClass:"text-sm text-gray-400 font-medium",
+    current:" (She/Her) • Following",
+    currentClass:"text-sm text-gray-500 font-medium",
     following:["• Following"],
     detail:"Talent Acquisition Specialist",
     detailClass:"text-violet-800 text-xs font-light",
@@ -172,8 +172,8 @@ const PostListVideo = [
     moreClass:"text-gray-600",
     title:"Roronoa Zoro",
     titleClass:"font-bold",
-    current:"",
-    currentClass:"",
+    current:" • Following",
+    currentClass:"text-sm text-gray-500 font-medium",
     following:"+ Follow",
     detail:"Self-taught Web Developer ;)",
     detailClass:"text-violet-800 text-xs font-light",
@@ -212,8 +212,8 @@ const PostListVideo = [
     moreClass:"text-gray-600",
     title:["Vinsmoke Sanji",""],
     titleClass:"font-bold",
-    current:"",
-    currentClass:"",
+    current:" (He/Him) • Following",
+    currentClass:"text-sm text-gray-500 font-medium",
     following:"",
     detail:"HR Consultant",
     detailClass:"text-violet-800 text-xs font-light",
@@ -250,8 +250,8 @@ const PostListVideo = [
     moreClass:"text-gray-600",
     title:["SinkedIn",""],
     titleClass:"font-bold",
-    current:"",
-    currentClass:"",
+    current:" • Following",
+    currentClass:"text-sm text-gray-500 font-medium",
     following:"",
     detail:"45,572,086 followers ",
     detailClass:"text-violet-800 text-xs font-light",
@@ -267,7 +267,7 @@ const PostListVideo = [
     pic:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
     iconHref:"/",
     prClass:`rounded-full h-[3rem] w-[3rem] object-cover border-4 
-     border-cyan-400 shadow shadow-black`,
+     border-green-400 shadow shadow-black`,
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
@@ -300,8 +300,9 @@ const PostListVideo = [
 const PostList = () => {
 
     return (
-      <div className="w-[100%]">
-      <div className="flex flex-col sm:mx-[4rem] md:mx-0 md:mr-[8rem]">
+      <div className="w-[100%] md:border-4 md:border-black">
+      <div className="flex flex-col sm:mx-[4rem]
+          md:mx-0">
       
       <div className="rounded-xl">
         
@@ -309,7 +310,7 @@ const PostList = () => {
         {PostListVideo.map((item)=>(
 
         
-         <div key={item.id} className="rounded-xl mb-5 border bg-white"> 
+         <div key={item.id} className="rounded-xl mb-5 bg-white"> 
       
           <PostContent
             id={item.id}
@@ -348,11 +349,11 @@ const PostList = () => {
           
           <div className="flex font-semibold
           text-sm text-gray-500 justify-evenly 
-          space-x-[4.4vw]
+          space-x-[1.5rem]
           p-4">  
           {PostHeaderIcons.map((item)=>(
             <div key={item.id}>
-              <hr className="left-0 w-[100%] absolute"/>
+              
               <IconProps
                  title={item.title}
                  icon={item.icon}

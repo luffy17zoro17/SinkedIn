@@ -45,13 +45,14 @@ const ImageFiles = [
 
 const LeftTopProfile = () => {
     return (
-      <div className="flex justify-center md:w-[18rem]"> 
+      <div className="mt-[5rem] mb-5 flex flex-col justify-center 
+       border-4 border-black"> 
       <div className="flex flex-col items-center
-       justify-center w-[100%] rounded-tl-xl
-        relative mt-[5rem] bg-white
-       rounded-br-xl border sm:mx-[4rem] md:mx-[2rem]">  
+       justify-center rounded-tl-xl
+        relative bg-white
+       rounded-br-xl border sm:mx-[4rem] md:mx-0">  
          <div className="flex flex-col items-center
-         justify-center w-full">
+         justify-center">
          {ImageFiles.map((item)=> (
           <div key={item.id}> 
             <ImageProps

@@ -46,7 +46,7 @@ const NavbarImages= [
         imgSrc:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
         iconHref:"/",
         classN:`rounded-full h-[2.8rem] w-[2.8rem] object-cover fixed border-4
-          border-cyan-400 shadow shadow-black
+          border-green-400 shadow shadow-black
          top-1 left-3 sm:left-4 xl:left-[5rem]`,
         icon:"",
         msgleft:"",

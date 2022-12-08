@@ -267,12 +267,15 @@ const MsgProfileImg = [
 
 
 
-const Messaging = () => {
+const Messaging = ({msgOpen, setMsgOpen}) => {
     return (
       
-      <div className="w-[20rem] right-0 z-40 top-[19vh]
-        space-y-4 p-4 shadow-sm fixed bottom-0
-       shadow-black rounded-lg bg-white invisible md:visible">
+      <div className={msgOpen ? (`w-[20rem] right-0 z-40 top-[19vh]
+        space-y-4 p-4 shadow-lg fixed bottom-0
+       shadow-black rounded-lg bg-white hidden md:block`) : 
+         (`bottom-0 fixed right-0 h-[4rem] shadow-lg shadow-black w-[20rem]
+            p-3 rounded-t-lg bg-white space-y-4 hidden md:block`)}>
+
         <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium flex items-center">
           {MsgProfileImg.map((img)=>(
@@ -287,14 +290,17 @@ const Messaging = () => {
         <div className="flex gap-2">
         {MsgHeaderIcons.map((item)=>(
           <div key={item.id}>
+            <button onClick={()=>setMsgOpen(!msgOpen)}> 
              <IconProps
                 icon={item.icon}
              />
+            </button> 
           </div>  
         ))}
         </div>
         </div>
-      
+
+        
          
         {MsgSearchBar.map((item)=>(
               <SearchBar
@@ -304,6 +310,8 @@ const Messaging = () => {
                  searchIconClass={item.searchIconClass}
               />
         ))}
+
+
       
         <div className="absolute bg-white z-20 w-[19rem]
           bottom-0 overflow-y-auto top-[8rem]">

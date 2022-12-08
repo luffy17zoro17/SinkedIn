@@ -50,12 +50,11 @@ const RecentContent = [
 const LeftBottomRecent = () => {
 
     return (
-      <>
-      
+      <div className="sm:mx-[4rem] border-4 border-black md:mx-0">
       <div className="flex flex-col text-xs pb-2
          rounded-tl-xl text-start pl-4 z-10
-        pr-[7rem] mt-[0.8rem]
-        bg-white md:w-[14rem]">  
+         mt-[0.8rem]
+        bg-white">  
         <h1 className="py-2 pt-4">Recent</h1>
         
         {RecentContent.map((item)=> (
@@ -81,11 +80,11 @@ const LeftBottomRecent = () => {
       <h3 className="font-bold py-4
        bg-white rounded-br-xl
       text-gray-600 text-center border-t-[0.1rem]
-       px-4 text-[1rem] md:w-[14rem]">
+       px-4 text-[1rem]">
         Discover more
       </h3>
    
-      </>
+      </div>
     
      
     );

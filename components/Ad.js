@@ -19,8 +19,8 @@ const AdImage = [
 
 const Ad = () => {
     return ( 
-      <div className="flex z-30 w-[20rem] mt-[0.8rem]
-       flex-col justify-center items-center hidden">
+      <div className="flex my-5 border-4 border-black
+       flex-col justify-center items-center">
          {AdImage.map((item)=>(
            <ImageProps
               src={item.imgSrc}

@@ -11,10 +11,11 @@ const SinkedIn= [{
   title:"",
   imgSrc:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
   iconHref:"/",
-  classN:"rounded-full h-[1.2rem] w-[1.3rem] object-cover",
+  classN:`rounded-full h-[1.4rem] w-[1.4rem] object-cover
+    border-4 border-green-400 shadow shadow-black`,
   icon:"",
-  ht:110,
-  wd:110,
+  ht:480,
+  wd:480,
   text:"",
 
 }]
@@ -44,7 +45,7 @@ const DownIcon = [
 const Footer = () => {
     return (
       <div className="items-center text-center flex
-       flex-col bg-white z-30 hidden">
+       flex-col bg-white border-4 border-black">
 
         {DownIcon.map((item)=>(
         <div key={item.id}> 
@@ -55,13 +56,14 @@ const Footer = () => {
          </div>
         ))}  
 
-        <span className="flex text-[0.8rem] mt-5"><b>SinkedIn&nbsp;</b>
+        <span className="flex text-[0.8rem] mt-5">
+           <b className="text-green-500">SinkedIn&nbsp;</b>
           {SinkedIn.map((item)=>(
            <ImageProps
              src={item.imgSrc}
              ht={item.ht}
              wd={item.wd}
-             className={item.classN}
+             classN={item.classN}
            />
           ))}
           &nbsp;SinkedIn Corporation © 2022
