@@ -28,7 +28,8 @@ const ImageFiles = [
         imgSrc:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
         iconHref:"/",
         classN:`h-[5rem] w-[5rem] border-4    
-          border-white rounded-full object-cover`,
+          border-white rounded-full object-cover 
+           shadow shadow-black`,
         icon:"",
         msgleft:``,
         text:`w-[100%] items-center
