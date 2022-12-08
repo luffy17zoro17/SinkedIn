@@ -10,6 +10,9 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import StartAPost from "./StartAPost";
 
 
+
+
+
 const PostHeaderImg= [
   {
       id:1,
@@ -85,7 +88,7 @@ const PostHeaderIcons = [
 
 
 const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
-   zeroClass, oneClass, threeClass}) => {
+   zeroClass, oneClass, threeClass, isClose, setIsClose}) => {
     return (
    
      <div className="flex flex-col mt-[3rem] sm:mx-[4rem]
@@ -110,7 +113,13 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
            Start a post
         </span>
 
+        
+        </div>
+
+        <div>  
         {postOpen === true && (
+        
+         <div className="border-4 border-red-600">
          <StartAPost
            title={title}
            imgSrc={imgSrc}
@@ -118,9 +127,15 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
            zeroClass={zeroClass}
            oneClass={oneClass}
            threeClass={threeClass}
-         />)} 
-
+           setPostOpen={setPostOpen}
+           isClose={isClose}
+           setIsClose={setIsClose}
+         />
+         </div>
+      
+        )}
         </div>
+        
 
         <div className="flex font-semibold
         text-sm text-gray-500 justify-evenly 

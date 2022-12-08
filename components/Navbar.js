@@ -163,7 +163,7 @@ const NavbarIcons = [
         text:"text-center font-light text-xs",
         horiz:"flex flex-col items-center",
         iconStyle:"hidden sm:flex",
-        textStyle:"shadow rounded-xl px-1 shadow-gray-200 hidden md:flex",
+        textStyle:`shadow rounded-xl px-1 shadow-gray-200 hidden md:flex`,
     }
 ]
 
@@ -185,7 +185,7 @@ const Navbar = () => {
 
          
         {NavbarImages.map((img)=>(          
-          <div key={img.id}>          
+          <div key={img.id} className="hover:text-violet-500 cursor-pointer">          
             <ImageProps
                classN={img.classN}
                id={img.id}
@@ -217,7 +217,7 @@ const Navbar = () => {
         
           
         {NavbarIcons.map((ico)=>(
-          <div key={ico.id}>          
+          <div key={ico.id} className="cursor-pointer hover:text-violet-500">          
             <IconProps
                id={ico.id}
                title={ico.id===6 ? [ico.title,ico.icon[1]] : ico.title}

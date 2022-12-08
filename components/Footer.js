@@ -66,7 +66,7 @@ const Footer = () => {
              classN={item.classN}
            />
           ))}
-          &nbsp;SinkedIn Corporation © 2022
+           &nbsp;SinkedIn Corporation © 2022
         </span>
       </div> 
       

@@ -3,7 +3,8 @@ import PostList from '../components/PostList';
 
 
 
-const Posts = ({postOpen, setPostOpen, title, icon,imgSrc, zeroClass, oneClass, threeClass}) => {
+const Posts = ({postOpen, setPostOpen, title, icon,imgSrc, zeroClass, oneClass,
+    threeClass, isClose, setIsClose}) => {
     return (
       <div className="">
         <div>
@@ -16,6 +17,8 @@ const Posts = ({postOpen, setPostOpen, title, icon,imgSrc, zeroClass, oneClass, 
               zeroClass={zeroClass}
               oneClass={oneClass}
               threeClass={threeClass}
+              isClose={isClose}
+              setIsClose={setIsClose}
            />
         </div>   
         <div><PostList/></div>

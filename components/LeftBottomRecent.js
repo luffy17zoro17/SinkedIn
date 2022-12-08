@@ -53,7 +53,6 @@ const LeftBottomRecent = () => {
       <div className="sm:mx-[4rem] border-4 border-black md:mx-0">
       <div className="flex flex-col text-xs pb-2
          rounded-tl-xl text-start pl-4 z-10
-         mt-[0.8rem]
         bg-white">  
         <h1 className="py-2 pt-4">Recent</h1>
         

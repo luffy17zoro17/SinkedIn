@@ -82,7 +82,7 @@ const PostListVideo = [
    {
     id:1,
     src:"https://www.youtube.com/embed/10X1siLTuac?&autoplay=1&mute=1&enablejsapi=1list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
-    ht:"280",
+    ht:"370",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
     moreClass:`text-gray-600`,
@@ -151,7 +151,7 @@ const PostListVideo = [
     imgSrc:"https://i.pinimg.com/originals/76/47/e8/7647e82733a03003480f61d5a991794a.jpg",
     iht:"200",
     iwd:"490",
-    imgClass:"object-cover",
+    imgClass:"object-cover w-full",
   
     reactions:[,
     <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
@@ -206,7 +206,7 @@ const PostListVideo = [
    {
     id:4,
     src:"https://www.youtube.com/embed/-c552FHJbrM?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
-    ht:"280",
+    ht:"370",
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
     moreClass:"text-gray-600",
@@ -275,7 +275,7 @@ const PostListVideo = [
     imgSrc:"https://images.unsplash.com/photo-1592890288564-76628a30a657?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     iht:"400",
     iwd:"490",
-    imgClass:"",
+    imgClass:"w-full object-cover",
 
     reactions:[
       <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,

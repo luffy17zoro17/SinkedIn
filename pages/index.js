@@ -27,6 +27,8 @@ import PollIcon from '@mui/icons-material/Poll';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 
+import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
+
 
 
 
@@ -69,7 +71,13 @@ const CreateAPost = [
          id:4,
          position:"bottomR",
          threeClass:"text-sm font-semibold",
-         icon:[<ChatBubbleIcon/>],
+         icon:[<ChatBubbleIcon className="p-1 my-1 mx-[0.3rem]"/>],
+      },
+      {
+         id:5,
+         position:"close",
+         fourClass:"",
+         icon:[<DisabledByDefaultIcon className="text-2xl"/>]
       }
 
     ]
@@ -89,6 +97,7 @@ export default function Home() {
 
   const [msgOpen,setMsgOpen] = useState(true);
   const [postOpen,setPostOpen] = useState(false);
+  const [isClose, setIsClose] = useState(false);
   
   return (
      
@@ -98,16 +107,16 @@ export default function Home() {
    </header>
    
   
-     <div className="flex justify-center md:mx-[1.5rem] lg:mx-[2rem] xl:mx-[20rem]">
+     <div className="flex justify-center md:mx-[3rem] lg:mx-[3rem] xl:mx-[15rem]">
 
-      <div className="md:grid md:grid-rows-6 md:grid-flow-col md:gap-4"> 
+      <div className="md:grid md:grid-rows-8 md:grid-flow-col md:gap-4"> 
 
-        <div className="md:row-span-6 md:col-span-1 border-4 border-red-500">
+        <div className="md:row-span-6 md:col-span-1 border-4 border-red-500 xl:w-[15rem]">
           <div className=""><LeftTopProfile/></div>
           <div className="md:sticky md:top-[5rem] md:self-start"><LeftBottomRecent/></div>
         </div>
 
-        <div className="md:cols-span-4 md:row-span-6">
+        <div className="md:cols-span-4 md:row-span-6 xl:w-[36rem]">
           {CreateAPost.map((postt)=>(
             <div key={postt.id}>
                <Posts
@@ -118,13 +127,16 @@ export default function Home() {
                 zeroClass={postt.icon[0].zeroClass}
                 oneClass={postt.icon[1].oneClass}
                 threeClass={postt.icon[3].threeClass}
+                isClose={isClose}
+                setIsClose={setIsClose}
                />
             </div>  
           ))}
           
         </div> 
 
-        <div className="md:row-span-6 md:col-span-1 border-4 border-red-500 hidden lg:block">
+        <div className="md:row-span-6 md:col-span-3
+         border-4 border-red-500 hidden lg:block lg:w-[19rem] xl:w-[21rem]">
           <div className=""><News/></div> 
           <div className="md:sticky md:top-[5rem] md:self-start"><Ad/>
               <Footer/></div>
