@@ -15,9 +15,9 @@ const MsgSearchBar = [
   {
       placeholder:"Search Messages",
       icon:[TuneIcon],
-      inputClass:`bg-gray-200 pl-10 outline-none
+      inputClass:`bg-gray-200 pl-10 outline-none 
            py-2 placeholder-gray-600 rounded-md text-sm`,
-      searchIconClass:"fixed px-2",     
+      searchIconClass:"fixed px-2 pt-1",     
   }
 ]
 

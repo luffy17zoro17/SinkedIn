@@ -101,7 +101,7 @@ export default function Home() {
   
   return (
      
-<div className="bg-gray-100">
+<div className="bg-white">
    <header>
       <Navbar/>
    </header>
@@ -111,7 +111,7 @@ export default function Home() {
 
       <div className="md:grid md:grid-rows-8 md:grid-flow-col md:gap-4"> 
 
-        <div className="md:row-span-6 md:col-span-1 border-4 border-red-500 xl:w-[15rem]">
+        <div className="md:row-span-6 md:col-span-1 xl:w-[15rem]">
           <div className=""><LeftTopProfile/></div>
           <div className="md:sticky md:top-[5rem] md:self-start"><LeftBottomRecent/></div>
         </div>
@@ -136,7 +136,7 @@ export default function Home() {
         </div> 
 
         <div className="md:row-span-6 md:col-span-3
-         border-4 border-red-500 hidden lg:block lg:w-[19rem] xl:w-[21rem]">
+          hidden lg:block lg:w-[19rem] xl:w-[21rem]">
           <div className=""><News/></div> 
           <div className="md:sticky md:top-[5rem] md:self-start"><Ad/>
               <Footer/></div>

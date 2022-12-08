@@ -91,9 +91,12 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
    zeroClass, oneClass, threeClass, isClose, setIsClose}) => {
     return (
    
-     <div className="flex flex-col mt-[3rem] sm:mx-[4rem]
-        md:border-4 md:border-black md:mx-0 md:mt-[5.3rem]"> 
-      <div className="rounded-xl border w-full bg-white">
+     <div className="flex flex-col mt-[3rem] 
+        sm:mx-[4rem]
+         md:mx-0 md:mt-[5.3rem]"> 
+      <div className="rounded-xl border w-full
+        shadow shadow-black
+        bg-gradient-to-r from-white to-gray-200">
         <div className="flex mx-3 pt-3 gap-3">
         <div className="">
         {PostHeaderImg.map((item)=>(
@@ -108,8 +111,8 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
         ))}
         </div>
         <span onMouseDown={()=>setPostOpen(true)} 
-        className="border text-gray-500 rounded-3xl text-sm font-semibold
-          border-gray-400 p-3 w-[100%] cursor-pointer">
+        className="border text-gray-700 rounded-3xl text-sm font-semibold
+           p-3 w-[100%] cursor-pointer bg-white shadow-inner shadow-gray-400">
            Start a post
         </span>
 
@@ -138,7 +141,7 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
         
 
         <div className="flex font-semibold
-        text-sm text-gray-500 justify-evenly 
+        text-sm text-gray-900 justify-evenly 
          space-x-[1rem]
          p-4">  
         {PostHeaderIcons.map((item)=>(

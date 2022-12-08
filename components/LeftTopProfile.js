@@ -46,10 +46,10 @@ const ImageFiles = [
 const LeftTopProfile = () => {
     return (
       <div className="mt-[5rem] mb-5 flex flex-col justify-center 
-       border-4 border-black"> 
+       "> 
       <div className="flex flex-col items-center
-       justify-center rounded-tl-xl
-        relative bg-white
+       justify-center rounded-tl-xl shadow shadow-black
+        relative bg-gradient-to-r from-white to-gray-200
        rounded-br-xl border sm:mx-[4rem] md:mx-0">  
          <div className="flex flex-col items-center
          justify-center">

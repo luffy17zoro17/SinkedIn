@@ -9,12 +9,12 @@ const LeftTopProfileText = () => {
        <div>
         <div className="pt-[5rem] text-center">
         <h1 className="font-bold">Thomas Mathew</h1>
-        <p className="text-gray-500 text-xs text-center">
+        <p className="text-gray-700 text-xs text-center">
          Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.
         </p>
         <hr className="h-[1rem] w-[100%] border border-x-0 border-t-0"/>
         
-        <h4 className="font-bold text-gray-500 text-xs 
+        <h4 className="font-bold text-gray-700 text-xs 
           justify-around leading-5 pt-4
          flex text-justify w-full">
            <span className="w-[10rem]">
@@ -27,7 +27,7 @@ const LeftTopProfileText = () => {
            </b>                         
         </h4>
         <hr className="h-[1rem] w-[100%] mt-4 border-y-1"/>
-        <span className="text-gray-500 text-xs">Access exclusive tools & insights</span>
+        <span className="text-gray-700 text-xs">Access exclusive tools & insights</span>
 
         <div className="flex flex-col px-1 py-3 text-xs">
 

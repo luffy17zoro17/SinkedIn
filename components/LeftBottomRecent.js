@@ -14,7 +14,7 @@ const RecentContent = [
           "# technology",
           "# digitalmarketing",
       ],
-      classN:"leading-5 font-semibold text-gray-500 text-xs",
+      classN:"leading-5 font-semibold text-gray-600 text-xs",
       titleclass:"",
    },  
    {   id:2,
@@ -38,7 +38,7 @@ const RecentContent = [
          "# india",
          "# creativity",
          ],
-      classN:"leading-5 font-semibold text-gray-500 text-xs",  
+      classN:"leading-5 font-semibold text-gray-600 text-xs",  
       titleclass:"text-blue-500 font-semibold text-xs leading-[2.7rem]", 
    }  
 ]
@@ -50,10 +50,12 @@ const RecentContent = [
 const LeftBottomRecent = () => {
 
     return (
-      <div className="sm:mx-[4rem] border-4 border-black md:mx-0">
+      <div className="shadow shadow-black rounded-tl-xl
+       rounded-br-xl
+      sm:mx-[4rem] md:mx-0">
       <div className="flex flex-col text-xs pb-2
-         rounded-tl-xl text-start pl-4 z-10
-        bg-white">  
+         rounded-tl-xl text-start pl-4 z-10 bg-gradient-to-r 
+         from-white to-gray-200">  
         <h1 className="py-2 pt-4">Recent</h1>
         
         {RecentContent.map((item)=> (

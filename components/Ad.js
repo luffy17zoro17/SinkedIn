@@ -19,7 +19,7 @@ const AdImage = [
 
 const Ad = () => {
     return ( 
-      <div className="flex my-5 border-4 border-black
+      <div className="flex my-5 
        flex-col justify-center items-center">
          {AdImage.map((item)=>(
            <ImageProps

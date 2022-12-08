@@ -45,7 +45,9 @@ const DownIcon = [
 const Footer = () => {
     return (
       <div className="items-center text-center flex
-       flex-col bg-white border-4 border-black">
+       flex-col shadow shadow-black pb-4
+       rounded-bl-xl rounded-tr-xl
+       bg-gradient-to-r from-white to-gray-200">
 
         {DownIcon.map((item)=>(
         <div key={item.id}> 

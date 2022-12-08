@@ -300,7 +300,7 @@ const PostListVideo = [
 const PostList = () => {
 
     return (
-      <div className="w-[100%] md:border-4 md:border-black">
+      <div className="w-[100%]">
       <div className="flex flex-col sm:mx-[4rem]
           md:mx-0">
       
@@ -310,7 +310,9 @@ const PostList = () => {
         {PostListVideo.map((item)=>(
 
         
-         <div key={item.id} className="rounded-xl mb-5 bg-white"> 
+         <div key={item.id} className="rounded-xl mb-5 
+          shadow shadow-black
+          bg-gradient-to-r from-white to-gray-200"> 
       
           <PostContent
             id={item.id}

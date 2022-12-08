@@ -55,8 +55,8 @@ const NewsContent = [
 const News = () =>{
     return (
       <div className="p-3 mt-[5rem] pb-[0.9rem] rounded-bl-xl 
-        border-4 border-black
-        bg-white rounded-tr-xl px-8 hidden lg:block">
+          shadow shadow-black bg-gradient-to-r from-white to-gray-200
+         rounded-tr-xl px-8 hidden lg:block">
          <h1 className="font-medium text-md pb-4">LinkedIn News</h1>
          {NewsContent.map((item) => (
             <div key={item.id}>
