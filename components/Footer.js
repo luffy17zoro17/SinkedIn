@@ -51,7 +51,6 @@ const Footer = () => {
 
         {DownIcon.map((item)=>(
         <div key={item.id}> 
-
          <FooterText
             icon={item.icon}     
          />
@@ -61,12 +60,14 @@ const Footer = () => {
         <span className="flex text-[0.8rem] mt-5">
            <b className="text-green-500">SinkedIn&nbsp;</b>
           {SinkedIn.map((item)=>(
+           <div key={item.id}> 
            <ImageProps
              src={item.imgSrc}
              ht={item.ht}
              wd={item.wd}
              classN={item.classN}
            />
+           </div>
           ))}
            &nbsp;SinkedIn Corporation © 2022
         </span>

@@ -22,12 +22,14 @@ const Ad = () => {
       <div className="flex my-5 
        flex-col justify-center items-center">
          {AdImage.map((item)=>(
+           <div key={item.id}>
            <ImageProps
               src={item.imgSrc}
               ht={item.ht}
               wd={item.wd}
               className={item.classN}
            />
+          </div> 
          ))
          }
          <h2 className="absolute text-2xl leading-[2.8rem]">

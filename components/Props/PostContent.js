@@ -4,8 +4,8 @@ import Image from "next/image";
 
 
 const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
-  following,text,icon,detailClass,timeiconClass, textClass,imgSrc,iht,iwd, 
-  imgClass, current,currentClass,pic,prHt,prWd,prClass,picHoriz, gap, reactions
+  text,icon,detailClass,timeiconClass, textClass,imgSrc,iht,iwd, 
+  imgClass, current,currentClass,pic,prHt,prWd,prClass,picHoriz,reactions
     ,reactionsClass,reactionCount,interactionCount, moreIcon, moreClass}) => {
 
     return (

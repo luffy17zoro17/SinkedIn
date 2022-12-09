@@ -1,4 +1,4 @@
-import PostHeader from '../components/PostHeader';
+import PostHeader from './Props/PostHeader';
 import PostList from '../components/PostList';
 
 

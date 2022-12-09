@@ -8,11 +8,11 @@ const RecentContent = [
       id:1,
       title:"",
       content:[
-          "# future",
-          "# india",
-          "# creativity",
-          "# technology",
-          "# digitalmarketing",
+         {id:1, value:"# future"},
+         {id:2, value:"# india"},
+         {id:3, value:"# creativity"},
+         {id:4, value:"# technology"},
+         {id:5, value:"# digitalmarketing"},
       ],
       classN:"leading-5 font-semibold text-gray-600 text-xs",
       titleclass:"",
@@ -34,10 +34,10 @@ const RecentContent = [
       id:4,
       title:"Followed Hashtags",
       content:[
-         "# future",
-         "# india",
-         "# creativity",
-         ],
+       {id:1,value:"# future"},
+       {id:2,value:"# india"},
+       {id:3,value:"# creativity"},
+      ],
       classN:"leading-5 font-semibold text-gray-600 text-xs",  
       titleclass:"text-blue-500 font-semibold text-xs leading-[2.7rem]", 
    }  
@@ -57,6 +57,8 @@ const LeftBottomRecent = () => {
          rounded-tl-xl text-start pl-4 z-10 bg-gradient-to-r 
          from-white to-gray-200">  
         <h1 className="py-2 pt-4">Recent</h1>
+
+       
         
         {RecentContent.map((item)=> (
           <div key={item.id}> 
@@ -64,16 +66,22 @@ const LeftBottomRecent = () => {
               id={item.id}
               title={item.title}
               content={item.content.map((hashs)=>(
-                        <div>
-                           {hashs}
-                        </div>   
-                        ))}
+                <div key={hashs.id}>
+                   {hashs.value}
+                </div>  
+                ))}
               className={item.classN}
               titleclass={item.titleclass}
            />
-                   
           </div> 
         ))}
+       
+      
+         
+            
+          
+
+
         <h3 className="text-xs text-gray-600 py-2 px-3
          font-semibold">Show more <ArrowDownwardIcon className="text-[1.3rem]"/></h3>
       

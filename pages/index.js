@@ -34,55 +34,34 @@ import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 
 
 
+
+
+
 const CreateAPost = [
   {
     id:1,
     title:"Create a post",
     imgSrc:"https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg",
-    icon:[
-      {
-        id:1,
-        position:"top",
-        zeroClass:"font-semibold text-sm",
-        icon:[<PublicIcon className="p-1"/>,<KeyboardArrowDownIcon/>],
-      },
-      {
-        id:2,
-        position:"middle",
-        oneClass:"text-green-500 font-semibold",
-        icon:[<TagFacesIcon/>],
-
-      },
-      {
-         id:3,
-         position:"bottomL",
-         twoClass:"",
-         icon:[
-           <PhotoSizeSelectActualIcon/>,
+    icon:[<PublicIcon className="p-1"/>,
+          <KeyboardArrowDownIcon/>,
+          <TagFacesIcon/>,
+          <PhotoSizeSelectActualIcon/>,
            <YouTubeIcon/>,
            <ArticleIcon/>,
            <BusinessCenterIcon/>,
            <CelebrationIcon/>,
            <PollIcon/>,
-           <MoreHorizIcon/>
-        ],
-      },
-      {
-         id:4,
-         position:"bottomR",
-         threeClass:"text-sm font-semibold",
-         icon:[<ChatBubbleIcon className="p-1 my-1 mx-[0.3rem]"/>],
-      },
-      {
-         id:5,
-         position:"close",
-         fourClass:"",
-         icon:[<DisabledByDefaultIcon className="text-2xl"/>]
-      }
-
-    ]
-  }
-
+           <MoreHorizIcon/>,
+           <ChatBubbleIcon className="p-1 my-1 mx-[0.3rem]"/>,
+           <DisabledByDefaultIcon className="text-2xl"/>
+         ],
+    position:["top","middle","bottomL","bottomR","close"],
+    zeroClass:"font-semibold text-sm",
+    oneClass:"text-green-500 font-semibold",
+    twoClass:"",
+    threeClass:"text-sm font-semibold",
+    fourClass:"",
+}
 ]
 
 
@@ -102,6 +81,7 @@ export default function Home() {
   return (
      
 <div className="bg-white">
+    
    <header>
       <Navbar/>
    </header>
@@ -124,9 +104,9 @@ export default function Home() {
                 setPostOpen={setPostOpen}
                 imgSrc={postt.imgSrc}
                 icon={postt.icon}
-                zeroClass={postt.icon[0].zeroClass}
-                oneClass={postt.icon[1].oneClass}
-                threeClass={postt.icon[3].threeClass}
+                zeroClass={postt.zeroClass}
+                oneClass={postt.oneClass}
+                threeClass={postt.threeClass}
                 isClose={isClose}
                 setIsClose={setIsClose}
                />

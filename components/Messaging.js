@@ -12,7 +12,7 @@ import IconProps from "./Props/IconProps";
 
 
 const MsgSearchBar = [
-  {
+  {   id:1,
       placeholder:"Search Messages",
       icon:[TuneIcon],
       inputClass:`bg-gray-200 pl-10 outline-none 
@@ -252,6 +252,7 @@ const MsgHeaderIcons = [
 
 const MsgProfileImg = [
   {
+    id:1,
     title:"Luffy",
     imgSrc:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
     ht:500,
@@ -270,7 +271,7 @@ const MsgProfileImg = [
 const Messaging = ({msgOpen, setMsgOpen}) => {
     return (
       
-      <div className={msgOpen ? (`w-[20rem] right-0 z-40 top-[19vh]
+      <div className={msgOpen === true ? (`w-[20rem] right-0 z-40 top-[19vh]
         space-y-4 p-4 shadow-lg fixed bottom-0
        shadow-black rounded-lg bg-white hidden md:block`) : 
          (`bottom-0 fixed right-0 h-[4rem] shadow-lg shadow-black w-[20rem]
@@ -278,24 +279,26 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
 
         <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium flex items-center">
-          {MsgProfileImg.map((img)=>(
+          {MsgProfileImg.map((imgz)=>(
+            <div key={imgz.id}>
              <ImageProps 
-               src={img.imgSrc}
-               ht={img.ht}
-               wd={img.wd}
-               classN={img.classN}
+               src={imgz.imgSrc}
+               ht={imgz.ht}
+               wd={imgz.wd}
+               classN={imgz.classN}
              />
+            </div>  
            ))}Messaging
         </h2>
         <div className="flex gap-2">
-        {MsgHeaderIcons.map((item)=>(
-          <div key={item.id}>
+        {MsgHeaderIcons.map((iconz)=>(
+          <div key={iconz.id}>
             <button 
-              onClick={item.id===3 && (()=>setMsgOpen(!msgOpen))}
-              disabled={item.id!==3}
+              onClick={iconz.id===3 ? (()=>setMsgOpen(!msgOpen)) : null}
+              disabled={iconz.id!==3}
             > 
              <IconProps
-                icon={item.icon}
+                icon={iconz.icon}
              />
             </button> 
           </div>  
@@ -305,35 +308,37 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
 
         
          
-        {MsgSearchBar.map((item)=>(
+        {MsgSearchBar.map((searchh)=>(
+            <div key={searchh.id}>
               <SearchBar
-                 placeholder={item.placeholder}
-                 inputClass={item.inputClass}
-                 icon={item.icon}
-                 searchIconClass={item.searchIconClass}
+                 placeholder={searchh.placeholder}
+                 inputClass={searchh.inputClass}
+                 icon={searchh.icon}
+                 searchIconClass={searchh.searchIconClass}
               />
+            </div>  
         ))}
 
 
       
         <div className="absolute bg-white z-20 w-[19rem]
           bottom-0 overflow-y-auto top-[8rem]">
-        {MessageImages.map((item)=>(
-          <div key={item.id}>
+        {MessageImages.map((imagez)=>(
+          <div key={imagez.id}>
              
              <ImageProps
-                src={item.imgSrc}
-                title={item.title}
-                titleClassN={item.titleClassN}
-                ht={item.ht}
-                wd={item.wd}
-                msg={item.message}
-                msgClassN={item.msgClassN}
-                msgleft={item.msgleft}
-                date={item.date}
-                dateClassN={item.dateClassN}
-                classN={item.classN}
-                text={item.text}
+                src={imagez.imgSrc}
+                title={imagez.title}
+                titleClassN={imagez.titleClassN}
+                ht={imagez.ht}
+                wd={imagez.wd}
+                msg={imagez.message}
+                msgClassN={imagez.msgClassN}
+                msgleft={imagez.msgleft}
+                date={imagez.date}
+                dateClassN={imagez.dateClassN}
+                classN={imagez.classN}
+                text={imagez.text}
              />
              <hr className="my-4"/>
           </div>  

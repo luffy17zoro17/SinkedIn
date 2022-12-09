@@ -3,8 +3,8 @@ import Image from "next/image";
 
 
 
-const StartAPost = ({title,imgSrc,icon,zeroClass,oneClass,threeClass,
-            setPostOpen, isClose, setIsClose}) => {
+const StartAPost = ({imgSrc,icon,zeroClass,oneClass,threeClass,
+            setPostOpen}) => {
 
     return (
       <div className="border-4 border-red-500 fixed left-0 top-0 
@@ -17,7 +17,7 @@ const StartAPost = ({title,imgSrc,icon,zeroClass,oneClass,threeClass,
         shadow-md shadow-black sm:w-[35rem]">
            <div className="flex justify-between">
               <h1 className="text-xl pb-8">Create a post</h1>
-              <span className="cursor-pointer" onMouseDown={()=>setPostOpen(false)}>{icon[4].icon}</span> 
+              <span className="cursor-pointer" onMouseDown={()=>setPostOpen(false)}>{icon[11]}</span> 
            </div>
 
  
@@ -37,8 +37,8 @@ const StartAPost = ({title,imgSrc,icon,zeroClass,oneClass,threeClass,
                 <b>Thomas Mathew</b>
                 <div className="border-2 border-black rounded-tl-3xl w-[8rem] rounded-br-3xl 
                 p-[0.1rem] text-center">
-                   <icon className={zeroClass}>{icon[0].icon[0]}
-                      Anyone{icon[0].icon[1]}
+                   <icon className={zeroClass}>
+                      {icon[0]}Anyone{icon[1]}
                     </icon> 
                 </div>
                 </div>
@@ -50,17 +50,20 @@ const StartAPost = ({title,imgSrc,icon,zeroClass,oneClass,threeClass,
               className="outline-none py-3 pt-7 w-full pl-4"
            />
            <div className="flex items-center gap-3 mb-4">
-              <icon>{icon[1].icon}</icon><span className={oneClass}>Add Hastag</span> 
+              <icon>{icon[2]}</icon><span className={oneClass}>Add Hastag</span> 
            </div>
 
            <div className="flex justify-between text-violet-500">
              <div>
-               <icon className="space-x-3">{icon[2].icon}</icon>
+               <icon className="space-x-3">
+                  {icon[3]}{icon[4]}{icon[5]}{icon[6]}
+                  {icon[7]}{icon[8]}{icon[9]}
+               </icon>
              </div>
 
              <div className="space-x-3">
                 <span className={threeClass}>
-                   {icon[3].icon}Anyone
+                   {icon[10]}Anyone
                 </span>
                 <span className="text-gray-400 bg-gray-200 rounded-2xl px-3 py-2">
                     Post

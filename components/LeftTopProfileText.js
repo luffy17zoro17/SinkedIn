@@ -18,7 +18,7 @@ const LeftTopProfileText = () => {
           justify-around leading-5 pt-4
          flex text-justify w-full">
            <span className="w-[10rem]">
-               Who's viewed your profile<br/>  
+               Who&apos;s viewed your profile<br/>  
                Impressions of your posts
            </span>
            <b className="text-blue-500 text-end truncate">

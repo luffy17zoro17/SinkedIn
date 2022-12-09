@@ -1,5 +1,5 @@
-import IconProps from "./Props/IconProps";
-import ImageProps from "./Props/ImageProps";
+import IconProps from "./IconProps";
+import ImageProps from "./ImageProps";
 
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
@@ -7,7 +7,7 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArticleIcon from '@mui/icons-material/Article';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import StartAPost from "./StartAPost";
+import StartAPost from "../StartAPost";
 
 
 
@@ -145,8 +145,7 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
          space-x-[1rem]
          p-4">  
         {PostHeaderIcons.map((item)=>(
-            <div key={item.id}>
-              
+            <div key={item.id}>  
               <IconProps
                  title={item.title}
                  icon={item.icon}

@@ -25,56 +25,26 @@ import PostContent from "./Props/PostContent";
 
 
 
-const PostHeaderIcons = [
+const ListBottomIcons = [
   
   {
       id:1,
-      title:"Like",
-      icon:[<ThumbUpAltIcon/>],
+      title:["Like","Comment","Repost","Send"],
+      icon:[
+        <ThumbUpAltIcon className="mx-2 my-3"/>,
+        <CommentIcon className="mx-2"/>,
+        <RepeatOnIcon className="mx-2"/>,
+        <SendIcon className="mx-2"/>],
       iconHref:"/",
       classN:"",
       text:"",
-      horiz:"flex items-center gap-2 pt-[1rem]",
-      iconStyle:"text-pink-500",
-      textStyle:"",
-   
-
-  },
-  {
-      id:2,
-      title:"Comment",
-      icon:[<CommentIcon/>],
-      iconHref:"/mynetwork",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2 pt-[1rem]",
-      iconStyle:"text-pink-500",
-      textStyle:"",
-
-  },
-  {
-      id:3,
-      title:"Repost",
-      icon:[<RepeatOnIcon/>],
-      iconHref:"/jobs",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2 pt-[1rem]",
-      iconStyle:"text-pink-500",
-      textStyle:"",
-
-  },
-  {
-      id:4,
-      title:"Send",
-      icon:[<SendIcon/>],
-      iconHref:"/messaging",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2 pt-[1rem]",
-      iconStyle:"text-pink-500",
+      gapp:"",
+      iconStyle:`text-purple-800 space-x-[6vw]
+       md:space-x-[2vw] lg:space-x-[0.6vw]
+       xl:space-x-[3rem]`,
       textStyle:"",
   },
+  
 ]
 
 
@@ -350,16 +320,14 @@ const PostList = () => {
           />
           
           <div className="flex font-semibold
-          text-sm text-gray-500 justify-evenly 
-          space-x-[1.5rem]
-          p-4">  
-          {PostHeaderIcons.map((item)=>(
+          text-sm justify-evenly p-4">  
+          {ListBottomIcons.map((item)=>(
             <div key={item.id}>
               
               <IconProps
-                 title={item.title}
+                 listBottomTitle={item.title}
                  icon={item.icon}
-                 horiz={item.horiz}
+                 gapp={item.gapp}
                  iconStyle={item.iconStyle}
                  className={item.classN}
                  text={item.text}
