@@ -11,7 +11,7 @@ const StartAPost = ({imgSrc,icon,zeroClass,oneClass,threeClass,
       <div className="border-4 border-red-500 fixed left-0 top-0 
        z-50 w-full h-full flex justify-center items-center">
        
-       <div className="fixed bg-black opacity-50 left-0
+       <div className="fixed bg-black opacity-70 left-0
         w-full h-full top-0 z-50"/>
        <div className="absolute p-5 pb-6 z-50 top-20 bg-white
         rounded-br-xl rounded-tl-xl w-full 

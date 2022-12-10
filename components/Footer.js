@@ -8,15 +8,13 @@ import FooterText from "./Props/FooterText";
 
 const SinkedIn= [{
   id:1,
-  title:"",
-  imgSrc:`wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
+  imgSrc:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
   iconHref:"/",
-  classN:`rounded-full h-[1.4rem] w-[1.4rem] object-cover
-    border-4 border-green-400 shadow shadow-black`,
-  icon:"",
-  ht:480,
-  wd:480,
-  text:"",
+  imgClass:`rounded-full h-[1.4rem] w-[1.4rem] object-cover
+    border-2 border-green-400 shadow shadow-black`,
+  iHt:580,
+  iWd:580,
+
 
 }]
 
@@ -46,6 +44,7 @@ const Footer = () => {
     return (
       <div className="items-center text-center flex
        flex-col shadow shadow-black pb-4
+        hover:shadow-red-100
        rounded-bl-xl rounded-tr-xl
        bg-gradient-to-r from-white to-gray-200">
 
@@ -62,10 +61,10 @@ const Footer = () => {
           {SinkedIn.map((item)=>(
            <div key={item.id}> 
            <ImageProps
-             src={item.imgSrc}
-             ht={item.ht}
-             wd={item.wd}
-             classN={item.classN}
+             imgSrc={item.imgSrc}
+             iHt={item.iHt}
+             iWd={item.iWd}
+             imgClass={item.imgClass}
            />
            </div>
           ))}

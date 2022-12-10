@@ -3,10 +3,10 @@
 
 
 
-const TitleProps = ({title,detail,detailClass}) => {
+const TitleProps = ({title,titleClass,detail,detailClass}) => {
     return (
       <div>
-       <h1>{title}</h1> 
+       <h1 className={titleClass}>{title}</h1> 
        <p className={detailClass}>{detail}</p>
       </div> 
     );

@@ -27,9 +27,9 @@ const Ad = () => {
          {AdImage.map((item)=>(
            <div key={item.id}>
            <ImageProps
-              src={item.imgSrc}
-              ht={item.ht}
-              wd={item.wd}
+              imgSrc={item.imgSrc}
+              iHt={item.ht}
+              iWd={item.wd}
               className={item.classN}
            />
           </div> 

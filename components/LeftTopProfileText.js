@@ -7,7 +7,7 @@ import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 const LeftTopProfileText = () => {
     return (
        <div>
-        <div className="pt-[5rem] text-center">
+        <div className="mt-[3.5rem] text-center p-2">
         <h1 className="font-bold">Thomas Mathew</h1>
         <p className="text-gray-700 text-xs text-center">
          Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.

@@ -1,9 +1,9 @@
 
 
-import IconProps from "./Props/IconProp";
+import IconProp from "./Props/IconProp";
+import TitleProp from "./Props/TitleProp";
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-//https://w0.peakpx.com/wallpaper/390/64/HD-wallpaper-nico-robin-girl-manga-one-piece.jpg
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LightbulbCircleIcon from '@mui/icons-material/LightbulbCircle';
 import CelebrationIcon from '@mui/icons-material/Celebration';
@@ -29,21 +29,57 @@ const ListBottomIcons = [
   
   {
       id:1,
-      title:["Like","Comment","Repost","Send"],
-      icon:[
-        <ThumbUpAltIcon className="mx-2 my-3"/>,
-        <CommentIcon className="mx-2"/>,
-        <RepeatOnIcon className="mx-2"/>,
-        <SendIcon className="mx-2"/>],
+      title:"Like",
+      icon:<ThumbUpAltIcon className="mx-2 mb-4"/>,
       iconHref:"/",
       classN:"",
       text:"",
       gapp:"",
-      iconStyle:`text-purple-800 space-x-[6vw]
-       md:space-x-[2vw] lg:space-x-[0.6vw] cursor-pointer
+      iconStyle:`text-purple-800 space-x-[6%]
+       md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
        xl:space-x-[3rem]`,
       textStyle:"",
   },
+  {
+    id:2,
+    title:"Comment",
+    icon:<CommentIcon className="mx-2"/>,
+     
+    iconHref:"/",
+    classN:"",
+    text:"",
+    gapp:"",
+    iconStyle:`text-purple-800 space-x-[6%]
+     md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
+     xl:space-x-[3%]`,
+    textStyle:"",
+},
+{
+  id:3,
+  title:"Repost",
+  icon:<RepeatOnIcon className="mx-2"/>,
+  iconHref:"/",
+  classN:"",
+  text:"",
+  gapp:"",
+  iconStyle:`text-purple-800 space-x-[6%]
+   md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
+   xl:space-x-[3%]`,
+  textStyle:"",
+},
+{
+  id:4,
+  title:"Send",
+  icon:<SendIcon className="mx-2"/>,
+  iconHref:"/",
+  classN:"",
+  text:"",
+  gapp:"",
+  iconStyle:`text-purple-800 space-x-[6vw]
+   md:space-x-[2vw] lg:space-x-[0.6vw] cursor-pointer
+   xl:space-x-[3rem]`,
+  textStyle:"",
+},
   
 ]
 
@@ -67,7 +103,7 @@ const PostListVideo = [
     time:"now • ",
     icon:["",<PublicIcon className="text-[1rem]"/>],
     text:"Now THIS is my kind of place :)",
-    textClass:"text-sm pt-2 pb-4 px-3",
+    textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
     iconHref:"/",
@@ -109,7 +145,7 @@ const PostListVideo = [
     time:"3h • ",
     icon:[<PublicIcon className="text-[1rem]"/>],
     text:"Dont give in! Keep fighting! Dereshishi :D",
-    textClass:"text-sm pt-2 pb-4 px-3",
+    textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/350/172/HD-wallpaper-nico-robin-icon-nico-robin-one-piece.jpg`,
     iconHref:"/",
@@ -150,7 +186,7 @@ const PostListVideo = [
     time:"5h • ",
     icon:<PublicIcon className="text-[1rem]"/>,
     text:"Hell yeah!  ;)",
-    textClass:"text-sm pt-2 pb-4 px-3",
+    textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/937/618/HD-wallpaper-zoro-aesthetic-roronoa-zoro-green-icon-verde-one-piece-anime.jpg`,
     iconHref:"/",
@@ -192,7 +228,7 @@ const PostListVideo = [
     time:"6h • Edited ",
     icon:<PublicIcon className="text-[1rem]"/>,
     text:"Beauty is something I have great appreciation for!",
-    textClass:"text-sm pt-2 pb-4 px-3",
+    textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/201/626/HD-wallpaper-sanji-aesthetic-amarillo-icon-vinsmoke-sanji-yellow-one-piece-anime.jpg`,
     iconHref:"/",
@@ -233,7 +269,7 @@ const PostListVideo = [
     text:`Stay safe and be able to spot and report scammers in SinkedIn.
          SinkedIn updated policies contains clear examples of scams, how to report
           and how SinkedIn responds to such reports.`,
-    textClass:"text-sm pt-2 pb-4 px-3",
+    textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
     iconHref:"/",
@@ -282,7 +318,7 @@ const PostList = () => {
 
         
          <div key={item.id} className="rounded-xl mb-5 
-          shadow shadow-black
+          shadow shadow-black hover:shadow-violet-900
           bg-gradient-to-r from-white to-gray-200"> 
       
           <PostContent
@@ -323,15 +359,18 @@ const PostList = () => {
           <div className="flex font-semibold
           text-sm justify-evenly p-4">  
           {ListBottomIcons.map((item)=>(
-            <div key={item.id}>
+            <div key={item.id} className="flex">
               
-              <IconProps
+              <IconProp
                  listBottomTitle={item.title}
                  icon={item.icon}
                  gapp={item.gapp}
                  iconStyle={item.iconStyle}
                  className={item.classN}
                  text={item.text}
+              />
+              <TitleProp
+                 title={item.title}
               />
             </div>  
           ))}

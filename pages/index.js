@@ -80,23 +80,25 @@ export default function Home() {
   
   return (
      
-<div className="bg-white">
+<div className={postOpen ? "fixed" : "bg-red-100"}>
     
    <header>
       <Navbar/>
    </header>
    
   
-     <div className="flex justify-center md:mx-[3rem] lg:mx-[3rem] xl:mx-[15rem]">
+    <div className="flex justify-center md:mx-[2rem] xl:mx-[15rem]">
 
       <div className="md:grid md:grid-rows-8 md:grid-flow-col md:gap-4"> 
 
-        <div className="md:row-span-6 md:col-span-1 xl:w-[15rem]">
+        <div className="md:row-span-6 md:col-span-1 md:w-[13rem] xl:w-[15rem]">
           <div className=""><LeftTopProfile/></div>
-          <div className="md:sticky md:top-[5rem] md:self-start"><LeftBottomRecent/></div>
+          <div className="md:sticky md:top-[5rem] md:self-start">
+              <LeftBottomRecent/>
+          </div>
         </div>
 
-        <div className="md:cols-span-4 md:row-span-6 xl:w-[36rem]">
+        <div className="md:cols-span-4 md:row-span-6 md:w-[30rem] lg:w-[28rem] xl:w-[36rem]">
           {CreateAPost.map((postt)=>(
             <div key={postt.id}>
                <Posts
@@ -110,13 +112,16 @@ export default function Home() {
                 isClose={isClose}
                 setIsClose={setIsClose}
                />
-            </div>  
+            </div> 
           ))}
-          
+        <div className='sm:mx-[4rem] md:mx-0 md:pb-[5rem] lg:hidden'>
+            <Footer/> 
+        </div>  
         </div> 
+        
 
         <div className="md:row-span-6 md:col-span-3
-          hidden lg:block lg:w-[19rem] xl:w-[21rem]">
+          hidden lg:block lg:w-[17rem] xl:w-[21rem]">
           <div className=""><News/></div> 
           <div className="md:sticky md:top-[5rem] md:self-start"><Ad/>
               <Footer/></div>

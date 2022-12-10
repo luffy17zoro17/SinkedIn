@@ -51,7 +51,7 @@ const LeftBottomRecent = () => {
 
     return (
       <div className="shadow shadow-black rounded-tl-xl
-       rounded-br-xl
+       rounded-br-xl hover:shadow-red-100
       sm:mx-[4rem] md:mx-0">
       <div className="flex flex-col text-xs pb-2
          rounded-tl-xl text-start pl-4 z-10 bg-gradient-to-r 

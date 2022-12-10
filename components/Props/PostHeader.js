@@ -1,5 +1,5 @@
-import IconProps from "./IconProp";
-import ImageProps from "./ImageProp";
+import IconProp from "./IconProp";
+import ImageProp from "./ImageProp";
 
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
@@ -8,6 +8,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import StartAPost from "../StartAPost";
+import TitleProp from "./TitleProp";
 
 
 
@@ -19,10 +20,10 @@ const PostHeaderImg= [
       title:"",
       imgSrc:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
       iconHref:"/",
-      classN:"rounded-full h-[3rem] w-[3.5rem] object-cover",
+      imgClass:"rounded-full h-[3rem] w-[3.5rem] object-cover",
       icon:"",
-      ht:700,
-      wd:700,
+      iHt:700,
+      iWd:700,
       text:"",
   }  
 ]
@@ -35,7 +36,7 @@ const PostHeaderIcons = [
   {
       id:1,
       title:"Photo",
-      icon:[<InsertPhotoIcon/>],
+      icon:[<InsertPhotoIcon className="text-blue-400 mr-2"/>],
       iconHref:"/",
       classN:"",
       text:"",
@@ -48,7 +49,7 @@ const PostHeaderIcons = [
   {
       id:2,
       title:"Video",
-      icon:[<SmartDisplayIcon/>],
+      icon:[<SmartDisplayIcon className="text-green-500 mr-2"/>],
       iconHref:"/mynetwork",
       classN:"",
       text:"",
@@ -60,7 +61,7 @@ const PostHeaderIcons = [
   {
       id:3,
       title:"Jobs",
-      icon:[<BusinessCenterIcon/>],
+      icon:[<BusinessCenterIcon className="text-violet-500 mr-2"/>],
       iconHref:"/jobs",
       classN:"",
       text:"",
@@ -72,7 +73,7 @@ const PostHeaderIcons = [
   {
       id:4,
       title:"Article",
-      icon:[<ArticleIcon/>],
+      icon:[<ArticleIcon className="text-orange-600 mr-2"/>],
       iconHref:"/messaging",
       classN:"",
       text:"",
@@ -94,25 +95,25 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
      <div className="flex flex-col mt-[3rem] 
         sm:mx-[4rem]
          md:mx-0 md:mt-[5.3rem]"> 
-      <div className="rounded-xl border w-full
-        shadow shadow-black
+      <div className="rounded-xl w-full
+        shadow shadow-black hover:shadow-red-100
         bg-gradient-to-r from-white to-gray-200">
         <div className="flex mx-3 pt-3 gap-3">
         <div className="">
         {PostHeaderImg.map((item)=>(
           <div key={item.id}>
-          <ImageProps
-             src={item.imgSrc}
-             ht={item.ht}
-             wd={item.wd}
-             classN={item.classN}
+          <ImageProp
+             imgSrc={item.imgSrc}
+             iHt={item.iHt}
+             iWd={item.iWd}
+             imgClass={item.imgClass}
           />
           </div>
         ))}
         </div>
         <span onMouseDown={()=>setPostOpen(true)} 
-        className="border text-gray-700 rounded-3xl text-sm font-semibold
-           p-3 w-[100%] cursor-pointer bg-white shadow-inner shadow-gray-400">
+        className="text-gray-700 rounded-3xl text-sm font-semibold hover:shadow-red-800
+           p-3 w-[100%] cursor-pointer bg-red-100 shadow-inner shadow-black">
            Start a post
         </span>
 
@@ -145,13 +146,15 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
          space-x-[1rem]
          p-4">  
         {PostHeaderIcons.map((item)=>(
-            <div key={item.id}>  
-              <IconProps
-                 title={item.title}
+            <div key={item.id} className="flex items-center">  
+              <IconProp
                  icon={item.icon}
                  horiz={item.horiz}
                  iconStyle={item.iconStyle}
                  className={item.classN}
+              />
+              <TitleProp
+                title={item.title}
               />
             </div>  
         ))}
