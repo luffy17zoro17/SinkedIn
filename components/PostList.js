@@ -1,9 +1,9 @@
 
 
-import IconProps from "./Props/IconProps";
+import IconProps from "./Props/IconProp";
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-
+//https://w0.peakpx.com/wallpaper/390/64/HD-wallpaper-nico-robin-girl-manga-one-piece.jpg
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LightbulbCircleIcon from '@mui/icons-material/LightbulbCircle';
 import CelebrationIcon from '@mui/icons-material/Celebration';
@@ -40,7 +40,7 @@ const ListBottomIcons = [
       text:"",
       gapp:"",
       iconStyle:`text-purple-800 space-x-[6vw]
-       md:space-x-[2vw] lg:space-x-[0.6vw]
+       md:space-x-[2vw] lg:space-x-[0.6vw] cursor-pointer
        xl:space-x-[3rem]`,
       textStyle:"",
   },
@@ -117,7 +117,6 @@ const PostListVideo = [
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
-
     imgSrc:"https://i.pinimg.com/originals/76/47/e8/7647e82733a03003480f61d5a991794a.jpg",
     iht:"200",
     iwd:"490",
@@ -159,7 +158,7 @@ const PostListVideo = [
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
-
+    
     imgSrc:"https://quotetheanime.com/wp-content/uploads/2019/11/Zoro-Quotes.-One-Piece-Quotes.-I-dont-care-waht-society-says.-Ive-never-regretted-doing-anything.-I-do-what-I-want.-Quote-anime-1024x1024.jpg",
     iht:"400",
     iwd:"400",
@@ -173,6 +172,8 @@ const PostListVideo = [
     reactionCount:" 15",  
     interactionCount:"20 comments • 4 reposts",
    },
+
+   
    {
     id:4,
     src:"https://www.youtube.com/embed/-c552FHJbrM?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
@@ -193,7 +194,7 @@ const PostListVideo = [
     text:"Beauty is something I have great appreciation for!",
     textClass:"text-sm pt-2 pb-4 px-3",
     classN:"static rounded-t-xl shadow shadow-black",
-    pic:`https://w0.peakpx.com/wallpaper/201/626/HD-wallpaper-sanji-aesthetic-amarillo-icon-vinsmoke-sanji-yellow-one-piece-anime-thumbnail.jpg`,
+    pic:`https://w0.peakpx.com/wallpaper/201/626/HD-wallpaper-sanji-aesthetic-amarillo-icon-vinsmoke-sanji-yellow-one-piece-anime.jpg`,
     iconHref:"/",
     prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
     prHt:70,

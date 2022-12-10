@@ -3,6 +3,7 @@ import Image from "next/image";
 
 
 
+
 const StartAPost = ({imgSrc,icon,zeroClass,oneClass,threeClass,
             setPostOpen}) => {
 

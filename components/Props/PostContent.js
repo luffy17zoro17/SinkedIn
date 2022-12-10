@@ -3,6 +3,7 @@ import Image from "next/image";
 
 
 
+
 const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
   text,icon,detailClass,timeiconClass, textClass,imgSrc,iht,iwd, 
   imgClass, current,currentClass,pic,prHt,prWd,prClass,picHoriz,reactions
@@ -41,13 +42,13 @@ const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
         </iframe>
         ) : (
         <div>
-          <Image
+         <Image
           src={imgSrc}
           height={iht}      // for image
           width={iwd}
           className={imgClass}
           alt=""
-           />
+         />
         </div>
         )}
         <div className={reactionsClass}>

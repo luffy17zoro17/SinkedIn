@@ -1,4 +1,7 @@
-import ImageProps from "./Props/ImageProps";
+
+import ImageProps from "./Props/ImageProp";
+
+
 
 const AdImage = [
   {

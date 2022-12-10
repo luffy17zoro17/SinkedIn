@@ -1,4 +1,4 @@
-import ImageProps from "./Props/ImageProps";
+import ImageProps from "./Props/ImageProp";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
@@ -9,7 +9,7 @@ import FooterText from "./Props/FooterText";
 const SinkedIn= [{
   id:1,
   title:"",
-  imgSrc:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
+  imgSrc:`wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
   iconHref:"/",
   classN:`rounded-full h-[1.4rem] w-[1.4rem] object-cover
     border-4 border-green-400 shadow shadow-black`,

@@ -1,4 +1,4 @@
-import IconProps from "./IconProps";
+import IconProps from "./IconProp";
 
 
 

@@ -1,5 +1,5 @@
-import IconProps from "./IconProps";
-import ImageProps from "./ImageProps";
+import IconProps from "./IconProp";
+import ImageProps from "./ImageProp";
 
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';

@@ -44,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.28.0"],\
             ["eslint-config-next", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:13.0.4"],\
             ["next", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:13.0.4"],\
+            ["nextjs-cors", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:2.1.2"],\
             ["postcss", "npm:8.4.19"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:18.2.0"],\
@@ -1989,6 +1990,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["cors", [\
+        ["npm:2.8.5", {\
+          "packageLocation": "./.yarn/cache/cors-npm-2.8.5-c9935a2d12-ced838404c.zip/node_modules/cors/",\
+          "packageDependencies": [\
+            ["cors", "npm:2.8.5"],\
+            ["object-assign", "npm:4.1.1"],\
+            ["vary", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["cosmiconfig", [\
         ["npm:7.1.0", {\
           "packageLocation": "./.yarn/cache/cosmiconfig-npm-7.1.0-13a5090bcd-c53bf7befc.zip/node_modules/cosmiconfig/",\
@@ -2862,6 +2874,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.28.0"],\
             ["eslint-config-next", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:13.0.4"],\
             ["next", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:13.0.4"],\
+            ["nextjs-cors", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:2.1.2"],\
             ["postcss", "npm:8.4.19"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:18.2.0"],\
@@ -4044,6 +4057,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "react-dom",\
             "react",\
             "sass"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["nextjs-cors", [\
+        ["npm:2.1.2", {\
+          "packageLocation": "./.yarn/cache/nextjs-cors-npm-2.1.2-a0df7e5245-92417b4367.zip/node_modules/nextjs-cors/",\
+          "packageDependencies": [\
+            ["nextjs-cors", "npm:2.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:2.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/nextjs-cors-virtual-53c9e5ef7a/0/cache/nextjs-cors-npm-2.1.2-a0df7e5245-92417b4367.zip/node_modules/nextjs-cors/",\
+          "packageDependencies": [\
+            ["nextjs-cors", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:2.1.2"],\
+            ["@types/next", null],\
+            ["cors", "npm:2.8.5"],\
+            ["next", "virtual:58139cb6e3abcef1909d0f317f815f1e977dba7e7c9330e606a10b8298dbd7e416e6475b2dbc2c39b2dff015c02226c68bd4a9f49b051baad398ef7a4c5e1f99#npm:13.0.4"]\
+          ],\
+          "packagePeers": [\
+            "@types/next",\
+            "next"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5460,6 +5496,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/util-deprecate-npm-1.0.2-e3fe1a219c-474acf1146.zip/node_modules/util-deprecate/",\
           "packageDependencies": [\
             ["util-deprecate", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vary", [\
+        ["npm:1.1.2", {\
+          "packageLocation": "./.yarn/cache/vary-npm-1.1.2-b49f70ae63-ae0123222c.zip/node_modules/vary/",\
+          "packageDependencies": [\
+            ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
