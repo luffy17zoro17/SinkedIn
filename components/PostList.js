@@ -96,7 +96,6 @@ const PostListVideo = [
     titleClass:"text-sm font-bold",
     current:" • You",
     currentClass:"text-sm text-gray-500 font-medium",
-    following:"",
     detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
     detailClass:"text-violet-800 text-xs font-light w-[18rem]",
     timeiconClass:"text-gray-500 text-xs",
@@ -106,17 +105,11 @@ const PostListVideo = [
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
-    iconHref:"/",
     prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
   
-
-    imgSrc:"",
-    iht:"",
-    iwd:"",
-    imgClass:"",
     reactions:[
        <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
        <FavoriteIcon className="text-red-600 text-[1rem]"/>,
@@ -138,7 +131,6 @@ const PostListVideo = [
     titleClass:"font-bold",
     current:" (She/Her) • Following",
     currentClass:"text-sm text-gray-500 font-medium",
-    following:["• Following"],
     detail:"Talent Acquisition Specialist",
     detailClass:"text-violet-800 text-xs font-light",
     timeiconClass:"text-gray-500 text-xs",
@@ -148,7 +140,6 @@ const PostListVideo = [
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/350/172/HD-wallpaper-nico-robin-icon-nico-robin-one-piece.jpg`,
-    iconHref:"/",
     prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
     prHt:70,
     prWd:70,
@@ -179,7 +170,6 @@ const PostListVideo = [
     titleClass:"font-bold",
     current:" • Following",
     currentClass:"text-sm text-gray-500 font-medium",
-    following:"+ Follow",
     detail:"Self-taught Web Developer ;)",
     detailClass:"text-violet-800 text-xs font-light",
     timeiconClass:"text-gray-500 text-xs",
@@ -189,7 +179,6 @@ const PostListVideo = [
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/937/618/HD-wallpaper-zoro-aesthetic-roronoa-zoro-green-icon-verde-one-piece-anime.jpg`,
-    iconHref:"/",
     prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
     prHt:70,
     prWd:70,
@@ -221,7 +210,6 @@ const PostListVideo = [
     titleClass:"font-bold",
     current:" (He/Him) • Following",
     currentClass:"text-sm text-gray-500 font-medium",
-    following:"",
     detail:"HR Consultant",
     detailClass:"text-violet-800 text-xs font-light",
     timeiconClass:"text-gray-500 text-xs",
@@ -231,16 +219,11 @@ const PostListVideo = [
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://w0.peakpx.com/wallpaper/201/626/HD-wallpaper-sanji-aesthetic-amarillo-icon-vinsmoke-sanji-yellow-one-piece-anime.jpg`,
-    iconHref:"/",
     prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
     prHt:70,
     prWd:70,
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
 
-    imgSrc:"",
-    iht:"",
-    iwd:"",
-    imgClass:"",
 
     reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,"","","",],
     reactionsClass:`w-[100%] font-light px-5 pt-3
@@ -259,7 +242,6 @@ const PostListVideo = [
     titleClass:"font-bold",
     current:" • Following",
     currentClass:"text-sm text-gray-500 font-medium",
-    following:"",
     detail:"45,572,086 followers ",
     detailClass:"text-violet-800 text-xs font-light",
     timeiconClass:"text-gray-500 text-xs",
@@ -272,7 +254,6 @@ const PostListVideo = [
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
     pic:`https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/IN_domain.svg/640px-IN_domain.svg.png`,
-    iconHref:"/",
     prClass:`rounded-full h-[3rem] w-[3rem] object-cover border-4 
      border-green-400 shadow shadow-black`,
     prHt:70,
@@ -299,7 +280,9 @@ const PostListVideo = [
 
 
 
-
+// Not going to apply better prop drilling here because as 
+// ususal im learning as i build so expect way better prop drilling 
+// when i create my next app.
 
 
 
@@ -339,7 +322,6 @@ const PostList = () => {
             detailClass={item.detailClass}
             timeiconClass={item.timeiconClass}
             icon={item.icon}
-            following={item.following}
             time={item.time}
             text={item.text}
             textClass={item.textClass}
@@ -359,7 +341,7 @@ const PostList = () => {
           <div className="flex font-semibold
           text-sm justify-evenly p-4">  
           {ListBottomIcons.map((item)=>(
-            <div key={item.id} className="flex">
+            <div key={item.id} className="flex py-5">
               
               <IconProp
                  listBottomTitle={item.title}

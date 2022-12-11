@@ -94,7 +94,7 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
    
      <div className="flex flex-col mt-[3rem] 
         sm:mx-[4rem]
-         md:mx-0 md:mt-[5.3rem]"> 
+         md:mx-0 md:mt-[5rem]"> 
       <div className="rounded-xl w-full
         shadow shadow-black hover:shadow-red-100
         bg-gradient-to-r from-white to-gray-200">

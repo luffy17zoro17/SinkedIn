@@ -42,8 +42,9 @@ const MessageContent= [
   title:[
     "Luffy"
   ],
- 
-  imgClass:["h-[3rem] w-[3rem] rounded-full object-cover"],
+  
+  imgClass:`h-[3rem] w-[3rem] rounded-full object-cover`,
+  hoverClass:`h-[3rem] w-[3rem] rounded-full object-cover border-4`,
   iHt:70,
   iWd:70,
  
@@ -59,12 +60,14 @@ const MessageContent= [
   text:`flex gap-3 px-3 justify-between`,
       
   imgSrc:`https://w0.peakpx.com/wallpaper/406/424/HD-wallpaper-luffy-anime-one-piece-smile.jpg`,
+  
 
   },
   {
     id:2,
     title:"Roronoa Zoro",
     imgClass:"h-[3rem] w-[3rem] rounded-full object-cover",
+    hoverClass:`h-[3rem] w-[3rem] rounded-full object-cover border-4`,
     iHt:70,
     iWd:70,
     msgClassN:"",
@@ -74,12 +77,14 @@ const MessageContent= [
     dateClassN:[""],
     date:"Nov 27",
     text:"",
-    imgSrc:`https://w0.peakpx.com/wallpaper/937/618/HD-wallpaper-zoro-aesthetic-roronoa-zoro-green-icon-verde-one-piece-anime.jpg`
+    imgSrc:`https://w0.peakpx.com/wallpaper/937/618/HD-wallpaper-zoro-aesthetic-roronoa-zoro-green-icon-verde-one-piece-anime.jpg`,
+   
   },
   {
     id:3,
     title:"Vinsmoke Sanji",
     imgClass:"h-[3rem] w-[3rem] rounded-full object-cover",
+    hoverClass:`h-[3rem] w-[3rem] rounded-full object-cover border-4`,
     iHt:80,
     iWd:80,
     msgClassN:"",
@@ -326,9 +331,10 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
         <div className="absolute bg-white z-20 w-[19rem]
           bottom-0 overflow-y-auto top-[8rem]">
         {MessageContent?.map((item)=>(
-          <div key={item?.id} className="hover:bg-red-100 hover:rounded-tl-3xl">
+          <div key={item?.id} className="hover:bg-red-100 
+          hover:rounded-tl-3xl">
             <div className="flex justify-between">
-            <div className="flex gap-4">
+            <div className="flex gap-4">    
              <ImageProp
                 imgSrc={item.imgSrc}
                 iHt={item.iHt}
@@ -340,6 +346,7 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
                detail={item.detail}
                detailClass={item.detailClass}
              />
+
             
             </div>
             <div className="text-xs text-purple-600 pr-3">

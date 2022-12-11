@@ -77,6 +77,7 @@ export default function Home() {
   const [msgOpen,setMsgOpen] = useState(true);
   const [postOpen,setPostOpen] = useState(false);
   const [isClose, setIsClose] = useState(false);
+ 
   
   return (
      
