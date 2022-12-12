@@ -22,8 +22,8 @@ import TitleProps from "./Props/TitleProp";
 const MsgSearchBar = [
   {   id:1,
       placeholderr:"Search Messages",
-      icon:[<SearchIcon className="z-10 absolute mt-[0.4rem] ml-4"/>,
-           <TuneIcon className="z-10 absolute mt-1 ml-[14rem]"/>,],
+      icon:[{ids:'x',value:<SearchIcon className="z-10 absolute mt-[0.4rem] ml-4"/>},
+           {ids:'y',value:<TuneIcon className="z-10 absolute mt-1 ml-[14rem]"/>},],
       iconClass:"",
       inputClass:`bg-gray-200 outline-none w-full
            py-2 pl-9 placeholder-gray-600 rounded-md text-sm`,
@@ -313,7 +313,7 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
             
                <div className=""> 
                <IconProp
-                 icon={searchh.icon.map((item,index)=>(<div key={index}>{item}</div>))}
+                 icon={searchh.icon.map((item,index)=>(<div key={index}>{item.value}</div>))}
                  iconClass={searchh.iconClass}
                />
                <SearchInputProp

@@ -59,42 +59,42 @@ const NavbarList = [
     
     {
         id:1,
-        title:["Home"],
+        title:[{nid:'c',value:"Home"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<HomeIcon/>,  
         iconClass:""
     },
    {
         id:2,
-        title:["My Network"],
+        title:[{nid:'c',value:"My Network"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<PeopleIcon/>,
         iconClass:"",
     },
     {
         id:3,
-        title:["Jobs"],
+        title:[{nid:'c',value:"Jobs"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<WorkIcon/>,
         iconClass:"",
     },
     {
         id:4,
-        title:["Messaging"],
+        title:[{nid:'c',value:"Messaging"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon: <MessageIcon/>,
         iconClass:""
     },
     {
         id:5,
-        title:["Notifications"],
+        title:[{nid:'c',value:"Notifications"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon: <CircleNotificationsIcon/>,
         iconClass:""
     },
     {   
         id:6,
-        title:["Me",<KeyboardArrowDownIcon/>],
+        title:[{nid:'c',value:"Me"},{nid:'d',value:<KeyboardArrowDownIcon/>}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow mt-[0.1rem] hidden lg:block",
         icon:<Image src="https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg"
                    alt="" className="object-cover rounded-full h-[1.4rem] w-[1.4rem]" 
@@ -103,7 +103,7 @@ const NavbarList = [
     },
     {
         id:7,
-        title:["Work",<KeyboardArrowDownIcon/>],
+        title:[{nid:'c',value:"Work"},{nid:'d',value:<KeyboardArrowDownIcon/>}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<AppsIcon className="hidden md:block"/>,
         iconClass:""
@@ -111,7 +111,7 @@ const NavbarList = [
     },
     {
         id:8,
-        title:["Post a job for free"],
+        title:[{nid:'c',value:"Post a job for free"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<NextWeekIcon className="hidden md:block"/>,
         iconClass:""
@@ -119,7 +119,7 @@ const NavbarList = [
     },
     {
         id:9,
-        title:[""],
+        title:[{nid:'',value:""}],
         titleClass:"hidden lg:block",
         icon:<MoreHorizIcon className="md:hidden"/>,
         iconClass:"" 
@@ -185,7 +185,7 @@ const Navbar = () => {
                iconClass={item.iconClass}
             />   
              <TitleProps
-              title={item.title.map((navtitle,index)=>(<span key={index}>{navtitle}</span>))} 
+              title={item.title.map((navtitle,index)=>(<span key={index}>{navtitle.value}</span>))} 
               titleClass={item.titleClass}
             />   
             

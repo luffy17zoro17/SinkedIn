@@ -79,9 +79,9 @@ const PostListVideo = [
    picHoriz:"flex gap-3 mb-3 px-3 py-4",
  
    reactions:[
-     <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
-     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
-     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,],
+     {rid:'h',value:<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>},
+    {rid:'i',value:<FavoriteIcon className="text-red-600 text-[1rem]"/>},
+     {rid:'j',value:<LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>}],
    reactionsClass:`w-[100%] font-light px-5 mt-6
     flex justify-between text-[0.8rem]`, 
    reactionCount:" 6",  
@@ -118,10 +118,10 @@ const PostListVideo = [
     imgClass:"object-cover w-full",
   
     reactions:[,
-    <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
-     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
-     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,
-     <CelebrationIcon className="text-violet-600 text-[1rem]"/>],
+    {rid:'h',value:<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>},
+     {rid:'i',value:<FavoriteIcon className="text-red-600 text-[1rem]"/>},
+     {rid:'j',value:<LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>},
+     {rid:'k',value:<CelebrationIcon className="text-violet-600 text-[1rem]"/>}],
     reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
     reactionCount:" 34",  
@@ -157,9 +157,9 @@ const PostListVideo = [
     iwd:"400",
     imgClass:"object-cover w-[100%] h-[18rem] rounded-t-full",
 
-    reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
-     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
-     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>],
+    reactions:[{rid:'h',value:<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>},
+     {rid:'i',value:<FavoriteIcon className="text-red-600 text-[1rem]"/>},
+     {rid:'j',value:<LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>}],
     reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
     reactionCount:" 15",  
@@ -191,7 +191,7 @@ const PostListVideo = [
     picHoriz:"flex gap-3 mb-3 px-3 py-4",
 
 
-    reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,"","","",],
+    reactions:[{rid:'h',value:<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>}],
     reactionsClass:`w-[100%] font-light px-5 mt-6
       flex justify-between text-[0.8rem]`,
     reactionCount:" 11",  
@@ -232,9 +232,9 @@ const PostListVideo = [
     imgClass:"w-full object-cover",
 
     reactions:[
-      <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
-      <FavoriteIcon className="text-red-600 text-[1rem]"/>,
-      <CelebrationIcon className="text-violet-600 text-[1rem]"/>,
+      {rid:'h',value:<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>},
+      {rid:'i',value:<FavoriteIcon className="text-red-600 text-[1rem]"/>},
+      {rid:'j',value:<CelebrationIcon className="text-violet-600 text-[1rem]"/>},
     ],
     reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
@@ -296,7 +296,7 @@ const PostList = () => {
             iht={item.iht}
             iwd={item.iwd}
             imgClass={item.imgClass}
-            reactions={item.reactions.map((value,index)=>(<span key={index}>{value}</span>))}
+            reactions={item.reactions.map((value,index)=>(<span key={index}>{value.value}</span>))}
             reactionsClass={item.reactionsClass}
             reactionCount={item.reactionCount}
             interactionCount={item.interactionCount}
