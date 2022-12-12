@@ -1,5 +1,5 @@
-import PostHeader from './Props/PostHeader';
-import PostList from '../components/PostList';
+import PostHeader from './PostHeader';
+import PostList from './PostList';
 
 
 

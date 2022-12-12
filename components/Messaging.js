@@ -365,4 +365,3 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
 }
 
 export default Messaging;
-

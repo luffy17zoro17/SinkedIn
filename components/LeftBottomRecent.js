@@ -8,25 +8,25 @@ const RecentContent = [
       id:1,
       title:"",
       content:[
-         {id:1, value:"# future"},
-         {id:2, value:"# india"},
-         {id:3, value:"# creativity"},
-         {id:4, value:"# technology"},
-         {id:5, value:"# digitalmarketing"},
+         {idc:'a', value:"# future"},
+         {idc:'b', value:"# india"},
+         {idc:'c', value:"# creativity"},
+         {idc:'d', value:"# technology"},
+         {idc:'e', value:"# digitalmarketing"},
       ],
       classN:"leading-5 font-semibold text-gray-600 text-xs",
       titleclass:"",
    },  
    {   id:2,
       title:"Groups",
-      content:[""],
+      content:[{id:'a',value:""}],
       classN:"",
       titleclass:"text-blue-500 text-xs font-semibold leading-[2.7rem]",
    },
    {   
       id:3,
       title:"Events",
-      content:[""],
+      content:[{id:'a',value:""}],
       classN:"",
       titleclass:"text-blue-500 font-semibold text-xs leading-[1rem]",
    },
@@ -34,9 +34,9 @@ const RecentContent = [
       id:4,
       title:"Followed Hashtags",
       content:[
-       {id:1,value:"# future"},
-       {id:2,value:"# india"},
-       {id:3,value:"# creativity"},
+       {id:'a',value:"# future"},
+       {id:'b',value:"# india"},
+       {id:'c',value:"# creativity"},
       ],
       classN:"leading-5 font-semibold text-gray-600 text-xs",  
       titleclass:"text-blue-500 font-semibold text-xs leading-[2.7rem]", 
@@ -65,8 +65,8 @@ const LeftBottomRecent = () => {
            <TextContent
               id={item.id}
               title={item.title}
-              content={item.content.map((hashs)=>(
-                <div key={hashs.id}>
+              content={item.content.map((hashs,index)=>(
+                <div key={index}>
                    {hashs.value}
                 </div>  
                 ))}

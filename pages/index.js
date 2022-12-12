@@ -1,4 +1,3 @@
-
 import Navbar from '../components/Navbar'
 
 import LeftTopProfile from '../components/LeftTopProfile';
@@ -106,7 +105,7 @@ export default function Home() {
                 postOpen={postOpen}
                 setPostOpen={setPostOpen}
                 imgSrc={postt.imgSrc}
-                icon={postt.icon}
+                icon={postt.icon.map((iconn,i)=>(<span key={i}>{iconn}</span>))}
                 zeroClass={postt.zeroClass}
                 oneClass={postt.oneClass}
                 threeClass={postt.threeClass}

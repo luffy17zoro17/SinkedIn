@@ -4,10 +4,10 @@ import Image from "next/image";
 
 
 
-const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
+const PostContent = ({src,ht,wd,title, titleClass,reactions
+  ,reactionsClass,interactionCount,reactionCount, classN, detail,time,
   text,icon,detailClass,timeiconClass, textClass,imgSrc,iht,iwd, 
-  imgClass, current,currentClass,pic,prHt,prWd,prClass,picHoriz,reactions
-    ,reactionsClass,reactionCount,interactionCount, moreIcon, moreClass}) => {
+  imgClass,current,currentClass,pic,prHt,prWd,prClass,picHoriz, moreIcon, moreClass}) => {
 
     return (
       <>
@@ -23,9 +23,10 @@ const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
         />
         </div>
         <div>
-        <h2 className={titleClass}>{title}
-        <span className={currentClass}>{current}</span>
-        </h2>
+        <div className={titleClass}>
+          {title}
+        <div className={currentClass}>{current}</div>
+        </div>
         <p className={detailClass}>{detail}</p>
         <span className={timeiconClass}>{time}{icon}</span>
         </div>
@@ -56,7 +57,8 @@ const PostContent = ({src,ht,wd,title, titleClass, classN, detail,time,
         </div>
       </>  
     );
-}
+  }
+    
 
 
 export default PostContent;

@@ -2,7 +2,7 @@ import ImageProps from "./Props/ImageProp";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
-import FooterText from "./Props/FooterText";
+import FooterText from "./FooterText";
 
 
 

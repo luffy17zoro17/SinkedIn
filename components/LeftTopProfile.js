@@ -1,4 +1,3 @@
-
 import ImageProps from './Props/ImageProp';
 
 import LeftTopProfileText from './LeftTopProfileText';

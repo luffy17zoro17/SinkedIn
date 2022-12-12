@@ -1,4 +1,3 @@
-
 import SearchIcon from '@mui/icons-material/Search';
 
 import Image from "next/image";

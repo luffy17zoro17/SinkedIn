@@ -1,5 +1,5 @@
-import IconProp from "./IconProp";
-import ImageProp from "./ImageProp";
+import IconProp from "./Props/IconProp";
+import ImageProp from "./Props/ImageProp";
 
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
@@ -7,8 +7,8 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArticleIcon from '@mui/icons-material/Article';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import StartAPost from "../StartAPost";
-import TitleProp from "./TitleProp";
+import StartAPost from "./StartAPost";
+import TitleProp from "./Props/TitleProp";
 
 
 

@@ -1,4 +1,3 @@
-
 import ImageProps from "./Props/ImageProp";
 
 
@@ -48,4 +47,3 @@ const Ad = () => {
 }
 
 export default Ad;
-

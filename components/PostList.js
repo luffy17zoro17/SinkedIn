@@ -1,5 +1,3 @@
-
-
 import IconProp from "./Props/IconProp";
 import TitleProp from "./Props/TitleProp";
 
@@ -28,7 +26,7 @@ import PostContent from "./Props/PostContent";
 const ListBottomIcons = [
   
   {
-      id:1,
+      pid:21,
       title:"Like",
       icon:<ThumbUpAltIcon className="mx-2 mb-4"/>,
       iconHref:"/",
@@ -41,7 +39,7 @@ const ListBottomIcons = [
       textStyle:"",
   },
   {
-    id:2,
+    pid:22,
     title:"Comment",
     icon:<CommentIcon className="mx-2"/>,
      
@@ -55,7 +53,7 @@ const ListBottomIcons = [
     textStyle:"",
 },
 {
-  id:3,
+  pid:23,
   title:"Repost",
   icon:<RepeatOnIcon className="mx-2"/>,
   iconHref:"/",
@@ -68,7 +66,7 @@ const ListBottomIcons = [
   textStyle:"",
 },
 {
-  id:4,
+  pid:24,
   title:"Send",
   icon:<SendIcon className="mx-2"/>,
   iconHref:"/",
@@ -84,43 +82,45 @@ const ListBottomIcons = [
 ]
 
 
+
+
 const PostListVideo = [
-   {
-    id:1,
-    src:"https://www.youtube.com/embed/10X1siLTuac?&autoplay=1&mute=1&enablejsapi=1list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
-    ht:"370",
-    wd:"100%",
-    moreIcon:<MoreHorizIcon/>,
-    moreClass:`text-gray-600`,
-    title:"Thomas Mathew",
-    titleClass:"text-sm font-bold",
-    current:" • You",
-    currentClass:"text-sm text-gray-500 font-medium",
-    detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
-    detailClass:"text-violet-800 text-xs font-light w-[18rem]",
-    timeiconClass:"text-gray-500 text-xs",
-    time:"now • ",
-    icon:["",<PublicIcon className="text-[1rem]"/>],
-    text:"Now THIS is my kind of place :)",
-    textClass:"text-sm pt-2 pb-5 px-8",
-    classN:"static rounded-t-xl shadow shadow-black",
-    pic:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
-    prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
-    prHt:70,
-    prWd:70,
-    picHoriz:"flex gap-3 mb-3 px-3 py-4",
-  
-    reactions:[
-       <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
-       <FavoriteIcon className="text-red-600 text-[1rem]"/>,
-       <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,],
-    reactionsClass:`w-[100%] font-light px-5 pt-3
-     flex justify-between text-[0.8rem]`, 
-    reactionCount:" 6",  
-    interactionCount:"8 comments",
-    
-   },
-   {
+  {
+   id:1,
+   src:"https://www.youtube.com/embed/10X1siLTuac?&autoplay=1&mute=1&enablejsapi=1list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
+   ht:"370",
+   wd:"100%",
+   moreIcon:<MoreHorizIcon/>,
+   moreClass:`text-gray-600`,
+   title:"Thomas Mathew",
+   titleClass:"text-sm font-bold",
+   current:" • You",
+   currentClass:"text-sm text-gray-500 font-medium",
+   detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
+   detailClass:"text-violet-800 text-xs font-light w-[18rem]",
+   timeiconClass:"text-gray-500 text-xs",
+   time:"now • ",
+   icon:<PublicIcon className="text-[1rem]"/>,
+   text:"Now THIS is my kind of place :)",
+   textClass:"text-sm pt-2 pb-5 px-8",
+   classN:"static rounded-t-xl shadow shadow-black",
+   pic:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
+   prClass:"rounded-full h-[3rem] w-[3rem] object-cover",
+   prHt:70,
+   prWd:70,
+   picHoriz:"flex gap-3 mb-3 px-3 py-4",
+ 
+   reactions:[
+     <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
+     <FavoriteIcon className="text-red-600 text-[1rem]"/>,
+     <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,],
+   reactionsClass:`w-[100%] font-light px-5 pt-3
+    flex justify-between text-[0.8rem]`, 
+   reactionCount:" 6",  
+   interactionCount:"8 comments",
+   
+  },
+  {
     id:2,
     src:"",
     ht:"280",
@@ -135,7 +135,7 @@ const PostListVideo = [
     detailClass:"text-violet-800 text-xs font-light",
     timeiconClass:"text-gray-500 text-xs",
     time:"3h • ",
-    icon:[<PublicIcon className="text-[1rem]"/>],
+    icon:<PublicIcon className="text-[1rem]"/>,
     text:"Dont give in! Keep fighting! Dereshishi :D",
     textClass:"text-sm pt-2 pb-5 px-8",
     classN:"static rounded-t-xl shadow shadow-black",
@@ -197,8 +197,6 @@ const PostListVideo = [
     reactionCount:" 15",  
     interactionCount:"20 comments • 4 reposts",
    },
-
-   
    {
     id:4,
     src:"https://www.youtube.com/embed/-c552FHJbrM?list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_",
@@ -238,7 +236,7 @@ const PostListVideo = [
     wd:"100%",
     moreIcon:<MoreHorizIcon/>,
     moreClass:"text-gray-600",
-    title:["SinkedIn",""],
+    title:"SinkedIn",
     titleClass:"font-bold",
     current:" • Following",
     currentClass:"text-sm text-gray-500 font-medium",
@@ -247,7 +245,7 @@ const PostListVideo = [
     timeiconClass:"text-gray-500 text-xs",
     time:`8h • Edited • `,
           
-    icon:[<PublicIcon className="text-[1rem]"/>],
+    icon:<PublicIcon className="text-[1rem]"/>,
     text:`Stay safe and be able to spot and report scammers in SinkedIn.
          SinkedIn updated policies contains clear examples of scams, how to report
           and how SinkedIn responds to such reports.`,
@@ -280,6 +278,7 @@ const PostListVideo = [
 
 
 
+
 // Not going to apply better prop drilling here because as 
 // ususal im learning as i build so expect way better prop drilling 
 // when i create my next app.
@@ -289,48 +288,47 @@ const PostListVideo = [
 
 const PostList = () => {
 
-    return (
-      <div className="w-[100%]">
-      <div className="flex flex-col sm:mx-[4rem]
-          md:mx-0">
+  return (
+    <div className="w-[100%]">
+    <div className="flex flex-col sm:mx-[4rem]
+        md:mx-0">
+    
+    <div className="rounded-xl">
       
-      <div className="rounded-xl">
-        
-       
-        {PostListVideo.map((item)=>(
+     
+      {PostListVideo.map((item)=>(
 
-        
-         <div key={item.id} className="rounded-xl mb-5 
-          shadow shadow-black hover:shadow-violet-900
-          bg-gradient-to-r from-white to-gray-200"> 
       
-          <PostContent
-            id={item.id}
-            pic={item.pic}
-            prHt={item.prHt}
-            prWd={item.prWd}
-            prClass={item.prClass}
-            picHoriz={item.picHoriz}
-            src={item.src}
-            ht={item.ht}
-            wd={item.wd}
-            title={item.title}
-            titleClass={item.titleClass}
-            current={item.current}
-            currentClass={item.currentClass}
-            detail={item.detail}
-            detailClass={item.detailClass}
-            timeiconClass={item.timeiconClass}
-            icon={item.icon}
-            time={item.time}
-            text={item.text}
-            textClass={item.textClass}
+       <div key={item.id} className="rounded-xl mb-5 
+        shadow shadow-black hover:shadow-violet-900
+        bg-gradient-to-r from-white to-gray-200"> 
+    
+        <PostContent
+          pic={item.pic}
+          prHt={item.prHt}
+          prWd={item.prWd}
+          prClass={item.prClass}
+          picHoriz={item.picHoriz}
+          src={item.src}
+          ht={item.ht}
+          wd={item.wd}
+          title={item.title}
+          titleClass={item.titleClass}
+          current={item.current}
+          currentClass={item.currentClass}
+          detail={item.detail}
+          detailClass={item.detailClass}
+          timeiconClass={item.timeiconClass}
+          icon={item.icon}
+          time={item.time}
+          text={item.text}
+          textClass={item.textClass}
             classN={item.classN}
             imgSrc={item.imgSrc}
             iht={item.iht}
             iwd={item.iwd}
             imgClass={item.imgClass}
-            reactions={[item.reactions]}
+            reactions={item.reactions.map((value,index)=>(<span key={index}>{value}</span>))}
             reactionsClass={item.reactionsClass}
             reactionCount={item.reactionCount}
             interactionCount={item.interactionCount}
@@ -340,19 +338,19 @@ const PostList = () => {
           
           <div className="flex font-semibold
           text-sm justify-evenly p-4">  
-          {ListBottomIcons.map((item)=>(
-            <div key={item.id} className="flex py-5">
+          {ListBottomIcons.map((bicons)=>(
+            <div key={bicons.pid} className="flex py-5">
               
               <IconProp
-                 listBottomTitle={item.title}
-                 icon={item.icon}
-                 gapp={item.gapp}
-                 iconStyle={item.iconStyle}
-                 className={item.classN}
-                 text={item.text}
+                 listBottomTitle={bicons.title}
+                 icon={bicons.icon}
+                 gapp={bicons.gapp}
+                 iconStyle={bicons.iconStyle}
+                 className={bicons.classN}
+                 text={bicons.text}
               />
               <TitleProp
-                 title={item.title}
+                 title={bicons.title}
               />
             </div>  
           ))}
@@ -368,20 +366,4 @@ const PostList = () => {
 }
 
 export default PostList;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
