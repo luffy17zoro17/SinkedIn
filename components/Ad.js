@@ -36,7 +36,7 @@ const Ad = () => {
          }
          <h2 className="absolute text-2xl leading-[2.8rem]">
           <b className="bg-orange-400 p-1 
-          shadow-md shadow-black">Check who's hiring</b><br/>
+          shadow-md shadow-black">Check who&apos;s hiring</b><br/>
           <span className="bg-orange-400 shadow-md shadow-black
           p-1">on SinkedIn</span>
          </h2>
