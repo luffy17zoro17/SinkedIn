@@ -65,7 +65,7 @@ const LeftTopProfile = () => {
                imgSrc={item.imgSrc}
                iWd={item.iWd}
                iHt={item.iHt}
-               imgPosClass={item.id===2 && item.imgPosClass}
+               imgPosClass={`${item.id===2 && item.imgPosClass}`}
                imgClass={item.imgClass}
                msgleft={item.msgleft}
                text={item.text}

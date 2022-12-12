@@ -41,20 +41,19 @@ const CreateAPost = [
     id:1,
     title:"Create a post",
     imgSrc:"https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg",
-    icon:[<PublicIcon className="p-1"/>,
-          <KeyboardArrowDownIcon/>,
-          <TagFacesIcon/>,
-          <PhotoSizeSelectActualIcon/>,
-           <YouTubeIcon/>,
-           <ArticleIcon/>,
-           <BusinessCenterIcon/>,
-           <CelebrationIcon/>,
-           <PollIcon/>,
-           <MoreHorizIcon/>,
-           <ChatBubbleIcon className="p-1 my-1 mx-[0.3rem]"/>,
-           <DisabledByDefaultIcon className="text-2xl"/>
+    icon:[{cp:'j', value:<PublicIcon className="p-1"/>},
+          {cp:'k', value:<KeyboardArrowDownIcon/>},
+          {cp:'l',value:<TagFacesIcon/>},
+          {cp:'m', value:<PhotoSizeSelectActualIcon/>},
+           {cp:'n',value:<YouTubeIcon/>},
+           {cp:'o', value:<ArticleIcon/>},
+           {cp:'p',value:<BusinessCenterIcon/>},
+           {cp:'q',value:<CelebrationIcon/>},
+           {cp:'r', value:<PollIcon/>},
+           {cp:'s', value:<MoreHorizIcon/>},
+           {cp:'t',value:<ChatBubbleIcon className="p-1 my-1 mx-[0.3rem]"/>},
+           {cp:'u',value:<DisabledByDefaultIcon className="text-2xl"/>}
          ],
-    position:["top","middle","bottomL","bottomR","close"],
     zeroClass:"font-semibold text-sm",
     oneClass:"text-green-500 font-semibold",
     twoClass:"",
@@ -105,7 +104,7 @@ export default function Home() {
                 postOpen={postOpen}
                 setPostOpen={setPostOpen}
                 imgSrc={postt.imgSrc}
-                icon={postt.icon.map((iconn,i)=>(<span key={i}>{iconn}</span>))}
+                icon={postt.icon.map((iconn,index)=>(<span key={index}>{iconn.value}</span>))}
                 zeroClass={postt.zeroClass}
                 oneClass={postt.oneClass}
                 threeClass={postt.threeClass}

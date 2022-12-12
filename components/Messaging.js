@@ -313,7 +313,7 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
             
                <div className=""> 
                <IconProp
-                 icon={searchh.icon}
+                 icon={searchh.icon.map((item,index)=>(<div key={index}>{item}</div>))}
                  iconClass={searchh.iconClass}
                />
                <SearchInputProp

@@ -1,5 +1,4 @@
 import IconProp from "./Props/IconProp";
-import TitleProp from "./Props/TitleProp";
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -83,7 +82,7 @@ const PostListVideo = [
      <ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
      <FavoriteIcon className="text-red-600 text-[1rem]"/>,
      <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,],
-   reactionsClass:`w-[100%] font-light px-5 pt-3
+   reactionsClass:`w-[100%] font-light px-5 mt-6
     flex justify-between text-[0.8rem]`, 
    reactionCount:" 6",  
    interactionCount:"8 comments",
@@ -123,7 +122,7 @@ const PostListVideo = [
      <FavoriteIcon className="text-red-600 text-[1rem]"/>,
      <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>,
      <CelebrationIcon className="text-violet-600 text-[1rem]"/>],
-    reactionsClass:`w-[100%] font-light px-5 pt-3
+    reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
     reactionCount:" 34",  
     interactionCount:"49 comments • 12 reposts",
@@ -161,7 +160,7 @@ const PostListVideo = [
     reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,
      <FavoriteIcon className="text-red-600 text-[1rem]"/>,
      <LightbulbCircleIcon className="text-yellow-600 text-[1rem]"/>],
-    reactionsClass:`w-[100%] font-light px-5 pt-3
+    reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
     reactionCount:" 15",  
     interactionCount:"20 comments • 4 reposts",
@@ -193,7 +192,7 @@ const PostListVideo = [
 
 
     reactions:[<ThumbUpAltIcon className="text-green-400 text-[1rem]"/>,"","","",],
-    reactionsClass:`w-[100%] font-light px-5 pt-3
+    reactionsClass:`w-[100%] font-light px-5 mt-6
       flex justify-between text-[0.8rem]`,
     reactionCount:" 11",  
     interactionCount:"17 comments • 4 reposts",
@@ -237,7 +236,7 @@ const PostListVideo = [
       <FavoriteIcon className="text-red-600 text-[1rem]"/>,
       <CelebrationIcon className="text-violet-600 text-[1rem]"/>,
     ],
-    reactionsClass:`w-[100%] font-light px-5 pt-3
+    reactionsClass:`w-[100%] font-light px-5 mt-6
      flex justify-between text-[0.8rem]`,
     reactionCount:" 214",  
     interactionCount:"545 comments • 22 reposts",

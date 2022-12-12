@@ -28,8 +28,8 @@ const SearchBarItem = [
     {
         id:1,
         placeholderr:"Search",
-        icon:[<SearchIcon className="p-[0.1rem] shadow
-        rounded-full shadow-black"/>],
+        icon:<SearchIcon className="p-[0.1rem] shadow
+        rounded-full shadow-black"/>,
         title:"Search",
         inputClass:`bg-gray-200 outline-none p-2 placeholder-green-600 
          hover:shadow-inner hover:shadow-green-300 ml-9
@@ -59,35 +59,35 @@ const NavbarList = [
     
     {
         id:1,
-        title:"Home",
+        title:["Home"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<HomeIcon/>,  
         iconClass:""
     },
    {
         id:2,
-        title:"My Network",
+        title:["My Network"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<PeopleIcon/>,
         iconClass:"",
     },
     {
         id:3,
-        title:"Jobs",
+        title:["Jobs"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<WorkIcon/>,
         iconClass:"",
     },
     {
         id:4,
-        title:"Messaging",
+        title:["Messaging"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon: <MessageIcon/>,
         iconClass:""
     },
     {
         id:5,
-        title:"Notifications",
+        title:["Notifications"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon: <CircleNotificationsIcon/>,
         iconClass:""
@@ -111,7 +111,7 @@ const NavbarList = [
     },
     {
         id:8,
-        title:"Post a job for free",
+        title:["Post a job for free"],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
         icon:<NextWeekIcon className="hidden md:block"/>,
         iconClass:""
@@ -119,7 +119,7 @@ const NavbarList = [
     },
     {
         id:9,
-        title:"",
+        title:[""],
         titleClass:"hidden lg:block",
         icon:<MoreHorizIcon className="md:hidden"/>,
         iconClass:"" 
@@ -184,10 +184,11 @@ const Navbar = () => {
                icon={item.icon}
                iconClass={item.iconClass}
             />   
-            <TitleProps
-              title={item.title} 
+             <TitleProps
+              title={item.title.map((navtitle,index)=>(<span key={index}>{navtitle}</span>))} 
               titleClass={item.titleClass}
-            />  
+            />   
+            
           </div>  
         ))}  
         </div>

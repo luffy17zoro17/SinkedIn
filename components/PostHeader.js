@@ -8,7 +8,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import StartAPost from "./StartAPost";
-import TitleProp from "./Props/TitleProp";
+
 
 
 
@@ -19,9 +19,7 @@ const PostHeaderImg= [
       id:1,
       title:"",
       imgSrc:`https://w0.peakpx.com/wallpaper/279/139/HD-wallpaper-monkey-d-luffy-anime-evening-field-one-piece.jpg`,
-      iconHref:"/",
       imgClass:"rounded-full h-[3rem] w-[3.5rem] object-cover",
-      icon:"",
       iHt:700,
       iWd:700,
       text:"",
@@ -36,50 +34,22 @@ const PostHeaderIcons = [
   {
       id:1,
       title:"Photo",
-      icon:[<InsertPhotoIcon className="text-blue-400 mr-2"/>],
-      iconHref:"/",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2",
-      iconStyle:"text-blue-400",
-      textStyle:"",
-   
-
+      icon:<InsertPhotoIcon className="text-blue-400 mr-2"/>,
   },
   {
       id:2,
       title:"Video",
-      icon:[<SmartDisplayIcon className="text-green-500 mr-2"/>],
-      iconHref:"/mynetwork",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2",
-      iconStyle:"text-green-500",
-      textStyle:"",
-
+      icon:<SmartDisplayIcon className="text-green-500 mr-2"/>, 
   },
   {
       id:3,
       title:"Jobs",
-      icon:[<BusinessCenterIcon className="text-violet-500 mr-2"/>],
-      iconHref:"/jobs",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2",
-      iconStyle:"text-violet-500",
-      textStyle:"",
-
+      icon:<BusinessCenterIcon className="text-violet-500 mr-2"/>,
   },
   {
       id:4,
       title:"Article",
-      icon:[<ArticleIcon className="text-orange-600 mr-2"/>],
-      iconHref:"/messaging",
-      classN:"",
-      text:"",
-      horiz:"flex items-center gap-2",
-      iconStyle:"text-orange-500",
-      textStyle:"",
+      icon:<ArticleIcon className="text-orange-600 mr-2"/>,
   },
 ]
 
@@ -149,13 +119,9 @@ const PostHeader = ({postOpen, setPostOpen, title, imgSrc,icon,
             <div key={item.id} className="flex items-center">  
               <IconProp
                  icon={item.icon}
-                 horiz={item.horiz}
-                 iconStyle={item.iconStyle}
                  className={item.classN}
               />
-              <TitleProp
-                title={item.title}
-              />
+              <h3>{item.title}</h3>
             </div>  
         ))}
         </div>
