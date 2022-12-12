@@ -29,54 +29,23 @@ const ListBottomIcons = [
       pid:21,
       title:"Like",
       icon:<ThumbUpAltIcon className="mx-2 mb-4"/>,
-      iconHref:"/",
-      classN:"",
-      text:"",
-      gapp:"",
-      iconStyle:`text-purple-800 space-x-[6%]
-       md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
-       xl:space-x-[3rem]`,
-      textStyle:"",
+      
   },
   {
     pid:22,
     title:"Comment",
     icon:<CommentIcon className="mx-2"/>,
-     
-    iconHref:"/",
-    classN:"",
-    text:"",
-    gapp:"",
-    iconStyle:`text-purple-800 space-x-[6%]
-     md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
-     xl:space-x-[3%]`,
-    textStyle:"",
 },
 {
   pid:23,
   title:"Repost",
   icon:<RepeatOnIcon className="mx-2"/>,
-  iconHref:"/",
-  classN:"",
-  text:"",
-  gapp:"",
-  iconStyle:`text-purple-800 space-x-[6%]
-   md:space-x-[2%] lg:space-x-[0.6%] cursor-pointer
-   xl:space-x-[3%]`,
-  textStyle:"",
+
 },
 {
   pid:24,
   title:"Send",
   icon:<SendIcon className="mx-2"/>,
-  iconHref:"/",
-  classN:"",
-  text:"",
-  gapp:"",
-  iconStyle:`text-purple-800 space-x-[6vw]
-   md:space-x-[2vw] lg:space-x-[0.6vw] cursor-pointer
-   xl:space-x-[3rem]`,
-  textStyle:"",
 },
   
 ]
@@ -342,16 +311,9 @@ const PostList = () => {
             <div key={bicons.pid} className="flex py-5">
               
               <IconProp
-                 listBottomTitle={bicons.title}
                  icon={bicons.icon}
-                 gapp={bicons.gapp}
-                 iconStyle={bicons.iconStyle}
-                 className={bicons.classN}
-                 text={bicons.text}
               />
-              <TitleProp
-                 title={bicons.title}
-              />
+              <h5>{bicons.title}</h5>
             </div>  
           ))}
           </div>
