@@ -173,7 +173,8 @@ const Navbar = () => {
         </div>
 
         
-        <div className="flex space-x-[3vw] lg:space-x-4 xl:space-x-6 ">
+        <div className="flex space-x-[2vw] sm:space-x-[3vw]
+         lg:space-x-4 xl:space-x-6 ">
         {NavbarList.map((item)=>(
           <div key={item.id} className="text-center 
            hover:text-green-500 text-xs font-light hover:shadow-inner

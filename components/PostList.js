@@ -65,7 +65,7 @@ const PostListVideo = [
    current:" • You",
    currentClass:"text-sm text-gray-500 font-medium",
    detail:"|Web UI Dev| 0penToWork |Tailwind CSS|Next js| /Let my Projects do the talking.",
-   detailClass:"text-violet-800 text-xs font-light w-[18rem]",
+   detailClass:"text-violet-800 text-xs font-light w-[16rem]",
    timeiconClass:"text-gray-500 text-xs",
    time:"now • ",
    icon:<PublicIcon className="text-[1rem]"/>,

@@ -332,7 +332,7 @@ const Messaging = ({msgOpen, setMsgOpen}) => {
           bottom-0 overflow-y-auto top-[8rem]">
         {MessageContent?.map((item)=>(
           <div key={item?.id} className="hover:bg-red-100 
-          hover:rounded-tl-3xl">
+          hover:rounded-tl-3xl hover:shadow-sm hover:shadow-black">
             <div className="flex justify-between">
             <div className="flex gap-4">    
              <ImageProp
