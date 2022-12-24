@@ -105,7 +105,7 @@ const NavbarList = [
         id:7,
         title:[{nid:'c',value:"Work"},{nid:'d',value:<KeyboardArrowDownIcon/>}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
-        icon:<AppsIcon className="hidden md:block"/>,
+        icon:<AppsIcon className="hidden md:flex"/>,
         iconClass:""
 
     },
@@ -113,7 +113,7 @@ const NavbarList = [
         id:8,
         title:[{nid:'c',value:"Post a job for free"}],
         titleClass:"px-1 rounded-xl shadow-gray-300 shadow hidden lg:block",
-        icon:<NextWeekIcon className="hidden md:block"/>,
+        icon:<NextWeekIcon className="hidden md:flex"/>,
         iconClass:""
      
     },
